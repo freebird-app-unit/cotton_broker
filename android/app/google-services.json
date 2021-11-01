@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1092885786732",
+    "project_id": "cotton-broker-25b0d",
+    "storage_bucket": "cotton-broker-25b0d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092885786732:android:5c985918395a6ac6676849",
+        "android_client_info": {
+          "package_name": "com.cottonbidbroker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1092885786732-mbkufs9gkblr44rd0ma0gosj1his7pj5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh0zSYw6abqVxVzJjj9-KkOEknYqEYRfA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1092885786732-mbkufs9gkblr44rd0ma0gosj1his7pj5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1092885786732-mbkufs9gkblr44rd0ma0gosj1his7pj5.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1092885786732</string>
+    <string name="google_api_key" translatable="false">AIzaSyAh0zSYw6abqVxVzJjj9-KkOEknYqEYRfA</string>
+    <string name="google_app_id" translatable="false">1:1092885786732:android:5c985918395a6ac6676849</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAh0zSYw6abqVxVzJjj9-KkOEknYqEYRfA</string>
+    <string name="google_storage_bucket" translatable="false">cotton-broker-25b0d.appspot.com</string>
+    <string name="project_id" translatable="false">cotton-broker-25b0d</string>
+</resources>
