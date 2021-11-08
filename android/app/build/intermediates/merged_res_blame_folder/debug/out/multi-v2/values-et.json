@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\vasim-socket\\01112021\\broker_app\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-et\\values-et.xml",
+            "outputFile": "D:\\Github_Projects\\cotton_broker\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-et\\values-et.xml",
             "map": [
                 {
                     "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\a16b3ff6a5eba037cbe6de6c71f0c6fd\\jetified-play-services-basement-17.6.0\\res\\values-et\\values.xml",

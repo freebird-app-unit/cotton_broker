@@ -1,7 +1,7 @@
 const api_config = {
   //Development URL
-  BASE_URL: 'http://cottontradecentre.com/development/cotton_bid_v1/api/',
-  //BASE_URL: 'http://cottontradecentre.com/development/cotton_bid_v2/api/',
+  //BASE_URL: 'http://cottontradecentre.com/development/cotton_bid_v1/api/',
+  BASE_URL: 'http://cottontradecentre.com/development/cotton_bid_v2/api/',
 
   //Production URL
   //BASE_URL: 'http://cottontradecentre.com/cotton_bid/api/',
