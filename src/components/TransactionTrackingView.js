@@ -137,17 +137,16 @@ export default function TransactionTrackingView(props) {
 
                         // console.log('props.Props.debit_note_array', props.Props.debit_note_array)
                         // let d = props.Props.debit_note_array.map(item => item.file)
-                        let d = props.Props.debit_note_array.map(item => item.file_name)
-
-
-                        // alert(d)
-                        setDebitNoteImageSrc(d)
-                        console.log('d', d)
-                        setshowDebitNote(false)
-
-                        let t = props.Props.debit_note_array.map(item => item.file.split('.').pop())
-                        setDebitNoteMimeType(t);
-                        setshowDebitNote(false)
+                        if (response.data.data.debit_note_array.length == 0) {
+                            setshowDebitNote(true)
+                          } else {
+                            let d = response.data.data.debit_note_array.map(item => item.file_name)
+                            setDebitNoteImageSrc(d)
+                            let t = response.data.data.debit_note_array.map(item => item.file_name.split('.').pop())
+                            setDebitNoteMimeType(t);
+                            setshowDebitNote(false)
+              
+                          }
                         // console.log('t', t)
 
 

@@ -298,7 +298,7 @@ const RegisterScreen = ({navigation, ref}) => {
   };
 
   const getDistrictList = stateID => {
-    //setLoading(true)
+    setLoading(true)
     setStateError(null);
     setValueState(stateID);
     let data = {state_id: stateID};
@@ -1922,12 +1922,10 @@ const styles = StyleSheet.create({
   },
   postInput: {
     fontSize: 15,
-    height: 100,
     width: '90%',
-    margin: 0,
-    marginVertical: 0,
+    fontFamily: 'Outrun future',
     backgroundColor: theme.colors.surface,
-    fontFamily:'Poppins-Regular'
+    textAlignVertical: 'top',
   },
   container: {
     width: '100%',
