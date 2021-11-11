@@ -368,7 +368,8 @@ class App extends Component {
                     arrDealDetails = [],
                     //displayDate = el.deal_final_date.split(','),
                     displayDate = el.deal_date,
-                    arrDealDetails = el.deal_details,
+                    //arrDealDetails = el.deal_details,
+                    arrDealDetails = el.deal_details.filter(dl => dl.lab_report_status != "fail_with_renegotiation"),
                     //console.log("Hello Bhavin Thakkar: " + arrDealDetails.length),
 
                     <View><View style={{ flexDirection: 'row', width: '100%' }}>
