@@ -206,11 +206,11 @@ const HeaderValue = (props) => {
                 <LabelValue label='Contact Person Mobile Number' value={Props.mobile_number || 'not provided'} />
                 <LabelValue label='Email Address' value={Props.email || 'not provided'} />
                 <MainSection Section='Location Details' />
-                <LabelValue label='Station' value='Saper' />
-                <LabelValue label='District' value='Rajkot' />
-                <LabelValue label='State' value='Gujarat' />
+                <LabelValue label='Station' value={Props.city || 'not provided'} />
+                <LabelValue label='District' value={Props.district || 'not provided'} />
+                <LabelValue label='State' value={Props.state || 'not provided'} />
                 <MainSection Section='Company Details' />
-                <LabelValue label='Website' value='Partnership' />
+                <LabelValue label='Website' value={Props.website || 'not provided'} />
 
                 
                 <HeaderValue label='Header' value={Props.header_image} />

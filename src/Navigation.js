@@ -29,6 +29,7 @@ import firebase from '@react-native-firebase/app';
 import EditProfile from './components/EditProfile'
 import ProfileSeen from './components/ProfileSeen'
 import Profile from './components/Profile'
+import MCXScreen from './components/MCXScreen'
 
 
 
@@ -134,6 +135,19 @@ const MyContractFunction = ({ navigation, route }) => {
             <View
                 style={styles.flex}>
                 <MyContract navigation={navigation} route={route} />
+            </View>
+        </View>
+    )
+}
+
+const mcxScreenFunction = ({ navigation, route }) => {
+    // console.log('navigation>', navigation)
+    return (
+        <View style={{ flex: 1, backgroundColor: '#333' }}>
+            <AppHeading title={'MCX'} menu leftPress={() => navigation.navigate('MenuScreen')} />
+            <View
+                style={styles.flex}>
+                <MCXScreen navigation={navigation} route={route} />
             </View>
         </View>
     )
@@ -395,6 +409,7 @@ const App = () => {
                     <Stack.Screen name="MyClients" component={MyClientsFunction} />
                     <Stack.Screen name="MenuScreen" component={MenuScreen} />
                     <Stack.Screen name="MyEarning" component={MyEarningFunction} />
+                    <Stack.Screen name="McxScreen" component={mcxScreenFunction} />
 
                     
 

@@ -227,7 +227,7 @@ class NotificationSelectSeller extends Component {
 
   getStationName = (districtID) => {
     
-    let data = {city_id:districtID}
+    let data = { district_id:districtID}
     var self = this;
     const formData = new FormData();
     formData.append('data', JSON.stringify(data));

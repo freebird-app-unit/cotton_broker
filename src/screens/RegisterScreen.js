@@ -46,6 +46,7 @@ import IconMaterial from 'react-native-vector-icons/MaterialIcons';
 import {launchCamera, launchImageLibrary} from 'react-native-image-picker';
 import ActionSheet from 'react-native-actionsheet';
 import {PermissionsAndroid} from 'react-native';
+import { heightPercentageToDP as hp } from '../components/responsive-ratio';
 
 import Stamp_Icon from '../assets/Stamp';
 import Header_Icon from '../assets/Header';
@@ -335,7 +336,7 @@ const RegisterScreen = ({navigation, ref}) => {
   const getStationName = districtID => {
     //setLoading(true)
     setValueDistrict(districtID);
-    let data = {city_id: districtID};
+    let data = { district_id: districtID};
 
     const formData = new FormData();
     formData.append('data', JSON.stringify(data));
@@ -480,17 +481,21 @@ const RegisterScreen = ({navigation, ref}) => {
         });
         return;
       }
-      if (!fieldValidator(password.value)) {
+      if (!fieldValidator(password.value) || password.value.length < 6) {
         setPassword({
           ...password,
-          error: defaultMessages.en.required.replace('{0}', 'Password'),
+          error: password.value.length < 6 ? defaultMessages.en.minlength
+            .replace('{0}', 'Password')
+            .replace('{1}', '6') : defaultMessages.en.required.replace('{0}', 'Password'),
         });
         return;
-      }
-      if (!fieldValidator(confirmPassword.value)) {
+      } 
+      if (!fieldValidator(confirmPassword.value) || confirmPassword.value.length < 6) {
         setConfirmPassword({
           ...confirmPassword,
-          error: defaultMessages.en.required.replace('{0}', 'Confirm Password'),
+          error: confirmPassword.value.length < 6 ? defaultMessages.en.minlength
+            .replace('{0}', 'Confirm Password')
+            .replace('{1}', '6') : defaultMessages.en.required.replace('{0}', 'Confirm Password'),
         });
         return;
       }
@@ -540,11 +545,20 @@ const RegisterScreen = ({navigation, ref}) => {
         );
         return;
       }
-      if (!fieldValidator(websiteURL.value)) {
+      var expression = /(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})/gi;
+      var regex = new RegExp(expression);
+
+    
+
+      if (!fieldValidator(websiteURL.value) || !websiteURL.value.match(regex)) {
+        // var expression = /(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})/gi;
+        // var regex = new RegExp(expression);
         setWebSiteURL({
           ...websiteURL,
-          error: defaultMessages.en.required.replace('{0}', 'website'),
+          error: defaultMessages.en.required.replace('{0}', 'website as i.e www.****.***'),
         });
+        // alert("enter valid url");
+
         return;
       }
       
@@ -1922,12 +1936,10 @@ const styles = StyleSheet.create({
   },
   postInput: {
     fontSize: 15,
-    height: 100,
     width: '90%',
-    margin: 0,
-    marginVertical: 0,
+    fontFamily: 'Outrun future',
     backgroundColor: theme.colors.surface,
-    fontFamily:'Poppins-Regular'
+    textAlignVertical: 'top',
   },
   container: {
     width: '100%',
@@ -1968,7 +1980,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 0,
     fontFamily:'Poppins-Regular'
   },
-  dropdown3DropdownStyle: {backgroundColor: 'white'},
+  dropdown3DropdownStyle: {backgroundColor: 'white',marginTop:hp(-4)},
   dropdown3RowStyle: {
     backgroundColor: '#fff',
     borderBottomColor: '#444',

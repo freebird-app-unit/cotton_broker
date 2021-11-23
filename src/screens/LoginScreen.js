@@ -52,6 +52,8 @@ const LoginScreen = ({route, navigation}) => {
   const toHex = RNSimpleCrypto.utils.convertArrayBufferToHex;
   const toUtf8 = RNSimpleCrypto.utils.convertArrayBufferToUtf8;
 
+// 
+
   const generateKey = (password, salt, cost, length) =>
     Aes.pbkdf2(password, salt, cost, length);
 

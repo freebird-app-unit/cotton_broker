@@ -1,6 +1,6 @@
 const api_config = {
   //Development URL
-  BASE_URL: 'http://cottontradecentre.com/development/cotton_bid_v1/api/',
+  BASE_URL: 'http://cottontradecentre.com/development/cotton_bid_v3/api/',
   //BASE_URL: 'http://cottontradecentre.com/development/cotton_bid_v2/api/',
 
   //Production URL
@@ -12,7 +12,7 @@ const api_config = {
   GET_BUSINESS_TYPE: 'business_type',
   GET_REGISTRATION_AS: 'registration_as',
   GET_STATE: 'state_list',
-  GET_DISTRICT: 'city_list',
+  GET_DISTRICT: 'district_list',
   GET_STATIONNAME: 'station_list',
   LOGIN_BROKER: 'login_broker',
   RESEND_OTP: 'resend_otp_broker',
@@ -50,6 +50,9 @@ const api_config = {
   BROKER_EARNING : 'broker_earning',
   RESEND_DEAL_OTP:'resend_deal_otp',
   LOGOUT_BROKER:'logout_broker',
+  GET_MCX_DATA: "get_mcx_data"
+
+
 
 };
 

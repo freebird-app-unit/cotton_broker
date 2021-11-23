@@ -1,29 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\vasim-socket\\01112021\\broker_app\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/broker_github/cotton_broker/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\b2b7e91e1d6a21c39076c0228ed0575f\\material-1.1.0\\res\\values-v23\\values-v23.xml",
+                    "source": "/Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/8d579dd45748d87fe8b785ebf0b3810b/work-runtime-2.5.0/res/values-v23/values-v23.xml",
                     "from": {
-                        "startLines": "2,6",
+                        "startLines": "2,3",
                         "startColumns": "4,4",
-                        "startOffsets": "55,320",
-                        "endLines": "5,9",
-                        "endColumns": "10,10",
-                        "endOffsets": "315,588"
-                    },
-                    "to": {
-                        "startLines": "53,57",
-                        "startColumns": "4,4",
-                        "startOffsets": "3686,3951",
-                        "endLines": "56,60",
-                        "endColumns": "10,10",
-                        "endOffsets": "3946,4219"
+                        "startOffsets": "55,121",
+                        "endColumns": "65,62",
+                        "endOffsets": "116,179"
                     }
                 },
                 {
-                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\0aeffa75962169198b450d028f628cac\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "/Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/0aeffa75962169198b450d028f628cac/cardview-1.0.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -42,7 +33,26 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\4ff7bd7275a648928c634d16a06248bd\\appcompat-1.1.0\\res\\values-v23\\values-v23.xml",
+                    "source": "/Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b2b7e91e1d6a21c39076c0228ed0575f/material-1.1.0/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2,6",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,320",
+                        "endLines": "5,9",
+                        "endColumns": "10,10",
+                        "endOffsets": "315,588"
+                    },
+                    "to": {
+                        "startLines": "53,57",
+                        "startColumns": "4,4",
+                        "startOffsets": "3686,3951",
+                        "endLines": "56,60",
+                        "endColumns": "10,10",
+                        "endOffsets": "3946,4219"
+                    }
+                },
+                {
+                    "source": "/Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/4ff7bd7275a648928c634d16a06248bd/appcompat-1.1.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,37,41,42,43,44",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -58,16 +68,6 @@
                         "endLines": "4,5,6,7,21,35,36,37,38,42,43,44,45,49",
                         "endColumns": "134,134,74,86,12,12,118,126,104,12,114,106,112,12",
                         "endOffsets": "314,449,524,611,1495,2391,2510,2637,2742,2966,3081,3188,3301,3531"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\8d579dd45748d87fe8b785ebf0b3810b\\work-runtime-2.5.0\\res\\values-v23\\values-v23.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,121",
-                        "endColumns": "65,62",
-                        "endOffsets": "116,179"
                     }
                 }
             ]

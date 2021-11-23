@@ -125,6 +125,11 @@ const Data = [
         Icon: <ChangePassword_Icon />
     },
     {
+        label: 'McxScreen',
+        Title: ' MCX',
+        Icon: <MCX_Icon />
+    },
+    {
         label: 'MyEarning',
         Title: 'My Earning',
         Icon: <ChangePassword_Icon />

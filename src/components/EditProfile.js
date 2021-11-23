@@ -408,20 +408,20 @@ const UpdateScreen = ({ navigation, ref, route }) => {
     const [valueState, setValueState] = useState(data.state_id);
     const [StateError, setStateError] = useState(null);
     const [itemsState, setItemsState] = useState([{ label: data.state, value: data.state_id }]);
-    const [selectedValueState, setSelectedValueState] = useState(null);
+    const [selectedValueState, setSelectedValueState] = useState([{ label: data.state, value: data.state_id }]);
 
     const [openDistrict, setOpenDistrict] = useState(false);
-    const [valueDistrict, setValueDistrict] = useState(data.city_id);
+    const [valueDistrict, setValueDistrict] = useState(data.district_id);
     const [DistrictError, setDistrictError] = useState(null);
-    const [itemsDistrict, setItemsDistrict] = useState([{ label: data.city, value: data.city_id }]);
-    const [selectedValueCity, setSelectedValueCity] = useState(null);
+    const [itemsDistrict, setItemsDistrict] = useState([{ label: data.district, value: data.district_id }]);
+    const [selectedValueCity, setSelectedValueCity] = useState([{ label: data.district, value: data.district_id }]);
 
 
     const [openStation, setOpenStation] = useState(false);
-    const [valueStation, setValueStation] = useState(data.station_id);
+    const [valueStation, setValueStation] = useState(data.city_id);
     const [StationError, setStationError] = useState(null);
-    const [itemsStation, setItemsStation] = useState([{ label: data.station, value: data.station_id }]);
-    const [selectedValueStation, setSelectedValueStation] = useState(null);
+    const [itemsStation, setItemsStation] = useState([{ label: data.city, value: data.city_id }]);
+    const [selectedValueStation, setSelectedValueStation] = useState([{ label: data.city, value: data.city_id }]);
 
 
     const [openSellerType, setOpenSellerType] = useState(false);
@@ -478,6 +478,9 @@ const UpdateScreen = ({ navigation, ref, route }) => {
     let actionSheet = useRef();
     let HeaderactionSheet = useRef();
     var optionArray = ['Choose image', 'Capture image', 'Cancel'];
+
+    const districtRef = useRef(null)
+    const StationRef = useRef(null)
 
     useEffect(async () => {
         try {
@@ -582,7 +585,8 @@ const UpdateScreen = ({ navigation, ref, route }) => {
                     // ]);
                 }
                 setItemsState(d);
-                setSelectedValueState({ label: route.params.data.state, value: parseInt(route.params.data.state_id) })
+                setSelectedValueState([{ label: route.params.data.state, value: parseInt(route.params.data.state_id) }])
+                getDistrictList(parseInt(route.params.data.state_id))
 
                 //setLoading(false)
             })
@@ -592,6 +596,7 @@ const UpdateScreen = ({ navigation, ref, route }) => {
     };
 
     const getDistrictList = stateID => {
+        setItemsDistrict([])
         setLoading(true);
         setStateError(null);
         setValueState(stateID);
@@ -623,13 +628,28 @@ const UpdateScreen = ({ navigation, ref, route }) => {
                     })
                 }
                 setItemsDistrict(d);
-                setSelectedValueCity({ label: route.params.data.city, value: parseInt(route.params.data.city_id) })
+                    getStationName(parseInt(route.params.data.district_id))
+                setSelectedValueCity([{ label: route.params.data.district, value: parseInt(route.params.data.district_id) }])
             } else {
-                let d =[]
+                    let d = []
+                    let de = []
+                    setValueDistrict(0)
+                    setValueStation(0)
                     d.push({
-                    label: "No district avilable", value: 0
-                })
+                        label: "No district avilable", value: 0
+                    })
+                    de.push({
+                        label:  "No station avilable", value: 0
+                    })
+                    setSelectedValueCity(d)
+                    setSelectedValueStation(de)
+
+                    districtRef.current.closeDropdown()
+                    // valueSellerType == 'Ginner' ? getStationName(parseInt(route.params.data.district_id)) : getCityName(parseInt(route.params.data.district_id))
                     setItemsDistrict(d);
+                    setItemsStation(de);
+
+
                     setLoading(false);
                 // setLoading(false);
             }
@@ -641,9 +661,11 @@ const UpdateScreen = ({ navigation, ref, route }) => {
     };
 
     const getStationName = districtID => {
+        setItemsStation([]);
+
         setLoading(true);
         setValueDistrict(districtID);
-        let data = { city_id: districtID };
+        let data = { district_id: districtID };
 
         const formData = new FormData();
         formData.append('data', JSON.stringify(data));
@@ -673,14 +695,19 @@ const UpdateScreen = ({ navigation, ref, route }) => {
                         // ]);
                     }
                     setItemsStation(d);
-                    setSelectedValueStation({ label: route.params.data.station, value: parseInt(route.params.data.station_id) })
+                    setSelectedValueStation([{ label: route.params.data.city, value: parseInt(route.params.data.city_id) }])
                 } else {
+                    StationRef.current.reset()
+
                     let d = []
                     d.push({
                         label: "No station avilable", value: 0
                     })
+                    setValueStation(0)
+                    setSelectedValueStation(d)
+                    StationRef.current.closeDropdown()
                     setItemsStation(d);
-                    setLoading(false);
+                    setLoading(false)
                 }
             })
             .catch(function (error) {
@@ -769,7 +796,19 @@ const UpdateScreen = ({ navigation, ref, route }) => {
 
         console.log('updated', id)
 
-        callUpdate(id);
+        if (valueDistrict == 0)
+            alert('please select the available district')
+
+        if (valueStation == 0)
+            alert('please select the available station')
+
+       
+
+
+        if (valueDistrict != 0 && valueStation != 0 )
+            callUpdate(id);
+
+       
 
     };
 
@@ -1201,7 +1240,8 @@ const UpdateScreen = ({ navigation, ref, route }) => {
                 <Spinner visible={loading} color="#085cab" />
 
                 <View style={{
-                    flexDirection: 'row', paddingHorizontal: wp(4), height: hp(10), alignItems: 'center', justifyContent: 'space-between'
+                    flexDirection: 'row', paddingHorizontal: wp(5), paddingTop: hp(2),
+                    height: hp(10), alignItems: 'center', justifyContent: 'space-between'
                 }}>
                     <Ionicons name='chevron-back-outline' size={hp(3)} color='#333' style={{ width: wp(30) }} onPress={() => navigation.goBack()} />
                     <Text style={{ alignSelf: 'center', color: '#333', fontSize: hp(3), fontFamily: 'Poppins - Regular' }}>Edit Profile</Text>
@@ -1296,14 +1336,21 @@ const UpdateScreen = ({ navigation, ref, route }) => {
                                         console.log(selectedItem, index);
                                         console.log(selectedItem.value);
                                         //setValueState(selectedItem.value)
+                                        setLoading(true)
                                         getDistrictList(selectedItem.value);
+
+                                        setTimeout(() => {
+                                            setLoading(false)
+                                            districtRef.current.openDropdown()
+
+                                        }, 200);
                                     }}
                                     buttonStyle={styles.dropdown3BtnStyle}
                                     renderCustomizedButtonChild={(selectedItem, index) => {
                                         return (
                                             <View style={styles.dropdown3BtnChildStyle}>
                                                 <Text style={styles.dropdown3BtnTxt}>
-                                                    {selectedItem ? selectedItem.label : itemsState[0].label || 'State'}
+                                                    {selectedItem ? selectedItem.label : selectedValueState[0].label || 'State'}
                                                 </Text>
                                             </View>
                                         );
@@ -1348,17 +1395,29 @@ const UpdateScreen = ({ navigation, ref, route }) => {
                                 </Text>
                                 <SelectDropdown
                                     data={itemsDistrict}
+                                    ref={districtRef}
+
                                     onSelect={(selectedItem, index) => {
                                         console.log(JSON.stringify(selectedItem));
                                         setDistrictError(null);
+                                        setLoading(true)
                                         getStationName(selectedItem.value);
+                                        setItemsStation([])
+
+                                        StationRef.current.reset()
+
+                                     
+                                            setLoading(false)
+                                        StationRef.current.openDropdown()
+
+                                      
                                     }}
                                     buttonStyle={styles.dropdown3BtnStyle}
                                     renderCustomizedButtonChild={(selectedItem, index) => {
                                         return (
                                             <View style={styles.dropdown3BtnChildStyle}>
                                                 <Text style={styles.dropdown3BtnTxt}>
-                                                    {selectedItem ? selectedItem.label : itemsDistrict[0].label || 'District'}
+                                                    {selectedItem ? selectedItem.label : selectedValueCity[0].label || 'District'}
                                                 </Text>
                                             </View>
                                         );
@@ -1402,6 +1461,8 @@ const UpdateScreen = ({ navigation, ref, route }) => {
                                 </Text>
                                 <SelectDropdown
                                     data={itemsStation}
+                                    ref={StationRef}
+
                                     onSelect={(selectedItem, index) => {
                                         console.log(selectedItem, index);
                                         setStationError(null);
@@ -1412,7 +1473,7 @@ const UpdateScreen = ({ navigation, ref, route }) => {
                                         return (
                                             <View style={styles.dropdown3BtnChildStyle}>
                                                 <Text style={styles.dropdown3BtnTxt}>
-                                                    {selectedItem ? selectedItem.label : itemsStation[0].label || 'Station Name'}
+                                                    {selectedItem ? selectedItem.label : selectedValueStation[0].label || 'Station Name'}
                                                 </Text>
                                             </View>
                                         );
@@ -1890,7 +1951,7 @@ const styles = StyleSheet.create({
         fontSize: 16,
         marginHorizontal: 0,
     },
-    dropdown3DropdownStyle: { backgroundColor: 'white' },
+    dropdown3DropdownStyle: { backgroundColor: 'white', marginTop: hp(-4) },
     dropdown3RowStyle: {
         backgroundColor: '#fff',
         borderBottomColor: '#444',
