@@ -1,7 +1,11 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/broker_github/cotton_broker/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ms/values-ms.xml",
+=======
+            "outputFile": "D:\\Github_Projects\\cotton_broker\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ms\\values-ms.xml",
+>>>>>>> aa124d7c0e21854c5e7f7d77c03afd8b08e603ef
             "map": [
                 {
                     "source": "/Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/490acf12c4f9537c3d0b9389b60c4264/jetified-play-services-base-17.5.0/res/values-ms/values.xml",

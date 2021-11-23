@@ -9,6 +9,7 @@ import {
 } from '../components/responsive-ratio';
 import { Avatar } from 'react-native-paper';
 import Stamp_Icon from '../assets/Stamp';
+import Header_Icon from '../assets/Header';
 import Spinner from 'react-native-loading-spinner-overlay';
 import defaultMessages from '../helpers/defaultMessages';
 import EncryptedStorage from 'react-native-encrypted-storage';
@@ -148,16 +149,39 @@ const HeaderValue = (props) => {
         <Text style={styles.ValueOfLabel}>{props.label}</Text>
                 <Image source={{ uri: props.value }} style={{ height: hp(15), width: hp(15), alignSelf: 'flex-start' }}
                  resizeMode={'contain'} /></View>
-                  : <Stamp label={props.label} />
+                  : <Header label={props.label} />
 
         
     
+}
+
+const StampValue = (props) => {
+    console.log('props',props.value)
+ return props.value ? <View style={{ marginTop: hp(2), alignSelf: 'flex-start' }}>
+     <Text style={styles.ValueOfLabel}>{props.label}</Text>
+             <Image source={{ uri: props.value }} style={{ height: hp(15), width: hp(15), alignSelf: 'flex-start' }}
+              resizeMode={'contain'} /></View>
+               : <Stamp label={props.label} />
+
+     
+ 
 }
 
     const Stamp = (props) => (
         <View style={{ marginTop: hp(2), alignSelf: 'flex-start' }}>
             <Text style={styles.ValueOfLabel}>{props.label}</Text>
             <Stamp_Icon
+                size={20}
+                color="black"
+                style={{ width: 20, height: 20, }}
+            />
+        </View>
+    )
+
+    const Header = (props) => (
+        <View style={{ marginTop: hp(2), alignSelf: 'flex-start' }}>
+            <Text style={styles.ValueOfLabel}>{props.label}</Text>
+            <Header_Icon
                 size={20}
                 color="black"
                 style={{ width: 20, height: 20, }}
@@ -214,7 +238,7 @@ const HeaderValue = (props) => {
 
                 
                 <HeaderValue label='Header' value={Props.header_image} />
-                <HeaderValue label='Stamp' value={Props.stamp_image} />
+                <StampValue label='Stamp' value={Props.stamp_image} />
 
                 <MainSection Section='Brokerage Details' />
         <View style={{ marginTop: hp(2), alignSelf: 'flex-start' }}>

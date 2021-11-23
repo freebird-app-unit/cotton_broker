@@ -1,7 +1,11 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/broker_github/cotton_broker/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gl/values-gl.xml",
+=======
+            "outputFile": "D:\\Github_Projects\\cotton_broker\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-gl\\values-gl.xml",
+>>>>>>> aa124d7c0e21854c5e7f7d77c03afd8b08e603ef
             "map": [
                 {
                     "source": "/Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b66d39b8468bd8d58445227932b7c47b/core-1.3.1/res/values-gl/values-gl.xml",

@@ -1,5 +1,6 @@
 -- Merging decision tree log ---
 manifest
+<<<<<<< HEAD
 ADDED from /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/broker_github/cotton_broker/android/app/src/main/AndroidManifest.xml:1:1-32:12
 INJECTED from /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/broker_github/cotton_broker/android/app/src/main/AndroidManifest.xml:1:1-32:12
 INJECTED from /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/broker_github/cotton_broker/android/app/src/main/AndroidManifest.xml:1:1-32:12
@@ -216,9 +217,225 @@ MERGED from [app.notifee:core:202108261754] /Users/empiere-mac/.gradle/caches/tr
 	android:requestLegacyExternalStorage
 		ADDED from /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/broker_github/cotton_broker/android/app/src/main/AndroidManifest.xml:17:7-50
 		ADDED from /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/broker_github/cotton_broker/android/app/src/main/AndroidManifest.xml:17:7-50
+=======
+ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:1:1-29:12
+INJECTED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:1:1-29:12
+INJECTED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:1:1-29:12
+INJECTED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:1:1-29:12
+MERGED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:1:1-29:12
+MERGED from [com.facebook.flipper:flipper:0.75.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\5df2c3954574f8fbe60d78d30679908c\jetified-flipper-0.75.1\AndroidManifest.xml:8:1-18:12
+MERGED from [com.facebook.flipper:flipper-network-plugin:0.75.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\d287f9d257aaf3adbd06ecbad9f1ba4e\jetified-flipper-network-plugin-0.75.1\AndroidManifest.xml:8:1-15:12
+MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.75.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\05f1b3f6a0f0fd6164b5c4687150fb9a\jetified-flipper-fresco-plugin-0.75.1\AndroidManifest.xml:8:1-15:12
+MERGED from [:notifee_react-native] D:\Github_Projects\cotton_broker\node_modules\@notifee\react-native\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-19:12
+MERGED from [:react-native-community_async-storage] D:\Github_Projects\cotton_broker\node_modules\@react-native-community\async-storage\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-community_datetimepicker] D:\Github_Projects\cotton_broker\node_modules\@react-native-community\datetimepicker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-13:12
+MERGED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-45:12
+MERGED from [:react-native-firebase_app] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-29:12
+MERGED from [:react-native-picker_picker] D:\Github_Projects\cotton_broker\node_modules\@react-native-picker\picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-aes-crypto] D:\Github_Projects\cotton_broker\node_modules\react-native-aes-crypto\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-document-picker] D:\Github_Projects\cotton_broker\node_modules\react-native-document-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-encrypted-storage] D:\Github_Projects\cotton_broker\node_modules\react-native-encrypted-storage\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-12:12
+MERGED from [:react-native-gesture-handler] D:\Github_Projects\cotton_broker\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-image-picker] D:\Github_Projects\cotton_broker\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-23:12
+MERGED from [:react-native-otp-verify] D:\Github_Projects\cotton_broker\node_modules\react-native-otp-verify\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-pager-view] D:\Github_Projects\cotton_broker\node_modules\react-native-pager-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-safe-area-context] D:\Github_Projects\cotton_broker\node_modules\react-native-safe-area-context\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-screens] D:\Github_Projects\cotton_broker\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-simple-crypto] D:\Github_Projects\cotton_broker\node_modules\react-native-simple-crypto\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-svg] D:\Github_Projects\cotton_broker\node_modules\react-native-svg\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-vector-icons] D:\Github_Projects\cotton_broker\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:rn-fetch-blob] D:\Github_Projects\cotton_broker\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-47:12
+MERGED from [com.facebook.react:react-native:0.64.2] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\71a5f50531bb8cb223eb85b45f847587\jetified-react-native-0.64.2\AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\98a0074b4f7d2f50c4a40fcd3bd6a13b\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bf2b2b271f61226312905c5c85dc4155\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:17:1-58:12
+MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\f3fcf500f016298a072f95d02db6f575\multidex-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [org.webkit:android-jsc:r245459] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\1e9b6315c33f4317ccafd3212a07b572\jetified-android-jsc-r245459\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e4fd85eadb40ae7d231f7303a1f10ae6\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:15:1-34:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e451fee15652f592c899e0d6381e4f4f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e24aa0b98dd4aa7756cdbf5fa65f32f4\jetified-firebase-encoders-json-18.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\99da45bd6427910f40b54502e54f29b5\jetified-firebase-installations-17.0.0\AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9f11b5e3f42f75b9af0a3d25c5f956c4\jetified-firebase-common-20.0.0\AndroidManifest.xml:15:1-40:12
+MERGED from [com.facebook.fresco:flipper:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\dbb52941b18c804406a9fe327cdc7574\jetified-flipper-2.2.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:stetho:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\70dd97d147c5d8e40a04098e31a18b48\jetified-stetho-2.2.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fresco:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\69122a7147471e0c5c9b61dabfd681b5\jetified-fresco-2.2.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\1f24b309e3abbb1816aaa2713c639a1e\jetified-drawee-2.2.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\ab83d1a5b10f9696cb9b063e69eccf99\jetified-nativeimagefilters-2.2.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:memory-type-native:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b81833eee405d36cc60034accd03e5a3\jetified-memory-type-native-2.2.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:memory-type-java:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\473fb6acab9fc257a840701168f90e21\jetified-memory-type-java-2.2.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-native:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e56a7a09db284613f8cbab0a341829ce\jetified-imagepipeline-native-2.2.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:soloader:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\24f25925a79be76a0cc94c3166774e95\jetified-soloader-2.2.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.10.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\116d81a9febf650b27987c1f63b2fe71\jetified-soloader-0.10.1\AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b2b7e91e1d6a21c39076c0228ed0575f\material-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\4ff7bd7275a648928c634d16a06248bd\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:17:1-143:12
+MERGED from [androidx.room:room-runtime:2.2.5] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\13ffe9b8c3fbe84db414b6fdccb41514\room-runtime-2.2.5\AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\d5575b0b04b296ed928544e2a10e0e4d\sqlite-framework-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\c01df15573a4b0d58928039e6488c559\jetified-imagepipeline-okhttp3-2.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:memory-type-ashmem:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\ce9125b5302dccfb52871bd2af5f033b\jetified-memory-type-ashmem-2.2.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\0e6bfedf1b1f4edaee8cfb822e4628f6\jetified-imagepipeline-2.2.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8466bf8f40d44ffac57d85f93412b0f6\jetified-nativeimagetranscoder-2.2.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\c4faf97c76e0dbc2db12c4178a7cfffc\jetified-imagepipeline-base-2.2.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\2027c98b5862800401a4ef76869fe91d\jetified-transport-runtime-3.0.0\AndroidManifest.xml:15:1-41:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\97e92e3e4e11ab6110066fcaf9b9a0eb\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\91ff908d24dc1d3019f2977bcf8acf46\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\d7ae7023aad5c9248184b319dc635e8b\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.security:security-crypto:1.1.0-alpha03] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\982321a5fbefda3a4e01f5ab28d19e7f\jetified-security-crypto-1.1.0-alpha03\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bdd1d24141ef5678c73cdc6002c75d2b\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-auth:19.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9d34607ee6e38ff40bda9abdf58e7d01\jetified-play-services-auth-19.2.0\AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\dd1a00b279bd095cb743a191eefc189f\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\85302179f97e4316b83232457d5aa30e\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\7853f7760dde1974e2d8ff0bb2a30790\jetified-firebase-installations-interop-17.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\ebc46345ce0262ddd001ec805cb7ea60\jetified-play-services-auth-api-phone-17.0.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\544aeba015f7acc2d0574c233c634fa9\jetified-play-services-auth-base-17.0.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-base:17.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\490acf12c4f9537c3d0b9389b60c4264\jetified-play-services-base-17.5.0\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:17.2.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\3e9d407562c93e1d562f3440219f0727\jetified-play-services-tasks-17.2.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bdcca1d8e12f717078a8962cc63ce87f\jetified-play-services-stats-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\68c5edb17144d88b6998bd6e9db428e3\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-basement:17.6.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\a16b3ff6a5eba037cbe6de6c71f0c6fd\jetified-play-services-basement-17.6.0\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.2.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\047a5f061538c53988fd9d412c8d45af\fragment-1.2.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\4c12057915a2d5f0c4c22e27c61f3b07\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\c8cf26f66a2ea12fdcc455381ee0961c\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\119310b3f9dbf1020dcf56e5abfe0fde\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\d46ac55a22a49ff303fb3b05252402b0\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\efe084eebb68b47d251216493a2a455c\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8fbada0f7d71cd402a3e62ceb99f2e09\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\ab55cacd6c13d175051551c1ee2cab4b\jetified-activity-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\a765f451519e2af35956db722cdbbf89\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\fa1e53f93d0ab754f6f4bb99c21639d7\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\dd7f663ef912709eec0fc50ae14901f4\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.3.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b66d39b8468bd8d58445227932b7c47b\core-1.3.1\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\19eba67f2669335d77568439c1bdd497\exifinterface-1.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6b78242eb4af598a7f94a484bb43bf84\jetified-transport-api-3.0.0\AndroidManifest.xml:15:1-22:12
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cfd678dceb512dc7497e09cbcabb95ca\jetified-firebase-components-17.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\255b19969b1aa3fb452ea5e5d7583495\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\be78f022ca08bb1193d8740d29692852\sqlite-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\36be02a4a03f9c80239bf905cf28d49c\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b5921e6441617bb9c096abf22f9a76af\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\a998af6182292fb7596d2d8033521f00\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\0aeffa75962169198b450d028f628cac\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\ee6ca70fa3e69df084611f36b161cd2a\lifecycle-livedata-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6c842012178132d98974af134ee83251\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e7ea8b838c80ef59cc03c3ae4fcb9f1f\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\ecc91242b54a7db61993588754cc6d5d\jetified-lifecycle-service-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\437522818eff986609719c3ca7de8cd0\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\95006269786786548412d3584d554cb1\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\16c6f2dc8525f64c9d9be6cf20d37aa4\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\4ff67378117cc4bce03835332d0c7d86\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\759db0b4ac40eb0a386bb7469ef53eab\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cf264264f2829f700dda65a49dbdea65\jetified-core-202108261754\AndroidManifest.xml:2:1-60:12
+MERGED from [com.facebook.fresco:fbcore:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\164715a0e1bca1d1afdba2df3bc8012f\jetified-fbcore-2.2.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:ui-common:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\63c38d26f33d896e9d039b3af38a845d\jetified-ui-common-2.2.0\AndroidManifest.xml:2:1-9:12
+INJECTED from D:\Github_Projects\cotton_broker\android\app\src\debug\AndroidManifest.xml:2:1-13:12
+INJECTED from D:\Github_Projects\cotton_broker\android\app\src\debug\AndroidManifest.xml:2:1-13:12
+INJECTED from D:\Github_Projects\cotton_broker\android\app\src\debug\AndroidManifest.xml:2:1-13:12
+	package
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:2:3-32
+		INJECTED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:2:3-32
+		INJECTED from D:\Github_Projects\cotton_broker\android\app\src\debug\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:1:1-29:12
+		INJECTED from D:\Github_Projects\cotton_broker\android\app\src\debug\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\debug\AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:1:1-29:12
+		INJECTED from D:\Github_Projects\cotton_broker\android\app\src\debug\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from [com.facebook.flipper:flipper:0.75.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\5df2c3954574f8fbe60d78d30679908c\jetified-flipper-0.75.1\AndroidManifest.xml:15:5-67
+MERGED from [com.facebook.flipper:flipper:0.75.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\5df2c3954574f8fbe60d78d30679908c\jetified-flipper-0.75.1\AndroidManifest.xml:15:5-67
+MERGED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-67
+MERGED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-67
+MERGED from [:rn-fetch-blob] D:\Github_Projects\cotton_broker\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-67
+MERGED from [:rn-fetch-blob] D:\Github_Projects\cotton_broker\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e451fee15652f592c899e0d6381e4f4f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e451fee15652f592c899e0d6381e4f4f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:26:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\99da45bd6427910f40b54502e54f29b5\jetified-firebase-installations-17.0.0\AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\99da45bd6427910f40b54502e54f29b5\jetified-firebase-installations-17.0.0\AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\dd1a00b279bd095cb743a191eefc189f\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\dd1a00b279bd095cb743a191eefc189f\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:8:5-67
+MERGED from [app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cf264264f2829f700dda65a49dbdea65\jetified-core-202108261754\AndroidManifest.xml:13:5-67
+MERGED from [app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cf264264f2829f700dda65a49dbdea65\jetified-core-202108261754\AndroidManifest.xml:13:5-67
+	android:name
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:4:22-64
+uses-permission#android.permission.CAMERA
+ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:5:2-7:7
+	android:name
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:6:7-47
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:8:5-10:7
+MERGED from [:rn-fetch-blob] D:\Github_Projects\cotton_broker\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:33:5-81
+MERGED from [:rn-fetch-blob] D:\Github_Projects\cotton_broker\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:33:5-81
+	android:name
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:9:7-63
+application
+ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:11:5-28:19
+MERGED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:11:5-28:19
+MERGED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:11:5-28:19
+MERGED from [:notifee_react-native] D:\Github_Projects\cotton_broker\node_modules\@notifee\react-native\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-17:19
+MERGED from [:notifee_react-native] D:\Github_Projects\cotton_broker\node_modules\@notifee\react-native\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-17:19
+MERGED from [:react-native-community_datetimepicker] D:\Github_Projects\cotton_broker\node_modules\@react-native-community\datetimepicker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-20
+MERGED from [:react-native-community_datetimepicker] D:\Github_Projects\cotton_broker\node_modules\@react-native-community\datetimepicker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-20
+MERGED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-43:19
+MERGED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-43:19
+MERGED from [:react-native-firebase_app] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-27:19
+MERGED from [:react-native-firebase_app] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-27:19
+MERGED from [:react-native-image-picker] D:\Github_Projects\cotton_broker\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-image-picker] D:\Github_Projects\cotton_broker\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-21:19
+MERGED from [:rn-fetch-blob] D:\Github_Projects\cotton_broker\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:35:5-45:19
+MERGED from [:rn-fetch-blob] D:\Github_Projects\cotton_broker\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:35:5-45:19
+MERGED from [com.facebook.react:react-native:0.64.2] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\71a5f50531bb8cb223eb85b45f847587\jetified-react-native-0.64.2\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.64.2] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\71a5f50531bb8cb223eb85b45f847587\jetified-react-native-0.64.2\AndroidManifest.xml:11:5-20
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bf2b2b271f61226312905c5c85dc4155\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:27:5-56:19
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bf2b2b271f61226312905c5c85dc4155\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:27:5-56:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e4fd85eadb40ae7d231f7303a1f10ae6\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e4fd85eadb40ae7d231f7303a1f10ae6\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e451fee15652f592c899e0d6381e4f4f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e451fee15652f592c899e0d6381e4f4f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\99da45bd6427910f40b54502e54f29b5\jetified-firebase-installations-17.0.0\AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\99da45bd6427910f40b54502e54f29b5\jetified-firebase-installations-17.0.0\AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9f11b5e3f42f75b9af0a3d25c5f956c4\jetified-firebase-common-20.0.0\AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9f11b5e3f42f75b9af0a3d25c5f956c4\jetified-firebase-common-20.0.0\AndroidManifest.xml:25:5-38:19
+MERGED from [com.facebook.soloader:soloader:0.10.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\116d81a9febf650b27987c1f63b2fe71\jetified-soloader-0.10.1\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.10.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\116d81a9febf650b27987c1f63b2fe71\jetified-soloader-0.10.1\AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b2b7e91e1d6a21c39076c0228ed0575f\material-1.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b2b7e91e1d6a21c39076c0228ed0575f\material-1.1.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:30:5-141:19
+MERGED from [androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:30:5-141:19
+MERGED from [androidx.room:room-runtime:2.2.5] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\13ffe9b8c3fbe84db414b6fdccb41514\room-runtime-2.2.5\AndroidManifest.xml:24:5-29:19
+MERGED from [androidx.room:room-runtime:2.2.5] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\13ffe9b8c3fbe84db414b6fdccb41514\room-runtime-2.2.5\AndroidManifest.xml:24:5-29:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\2027c98b5862800401a4ef76869fe91d\jetified-transport-runtime-3.0.0\AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\2027c98b5862800401a4ef76869fe91d\jetified-transport-runtime-3.0.0\AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.gms:play-services-auth:19.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9d34607ee6e38ff40bda9abdf58e7d01\jetified-play-services-auth-19.2.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:19.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9d34607ee6e38ff40bda9abdf58e7d01\jetified-play-services-auth-19.2.0\AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\85302179f97e4316b83232457d5aa30e\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\85302179f97e4316b83232457d5aa30e\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:17.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\490acf12c4f9537c3d0b9389b60c4264\jetified-play-services-base-17.5.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\490acf12c4f9537c3d0b9389b60c4264\jetified-play-services-base-17.5.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.2.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\3e9d407562c93e1d562f3440219f0727\jetified-play-services-tasks-17.2.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.2.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\3e9d407562c93e1d562f3440219f0727\jetified-play-services-tasks-17.2.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bdcca1d8e12f717078a8962cc63ce87f\jetified-play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bdcca1d8e12f717078a8962cc63ce87f\jetified-play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\68c5edb17144d88b6998bd6e9db428e3\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\68c5edb17144d88b6998bd6e9db428e3\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-basement:17.6.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\a16b3ff6a5eba037cbe6de6c71f0c6fd\jetified-play-services-basement-17.6.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.6.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\a16b3ff6a5eba037cbe6de6c71f0c6fd\jetified-play-services-basement-17.6.0\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.3.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b66d39b8468bd8d58445227932b7c47b\core-1.3.1\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b66d39b8468bd8d58445227932b7c47b\core-1.3.1\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\36be02a4a03f9c80239bf905cf28d49c\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\36be02a4a03f9c80239bf905cf28d49c\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cf264264f2829f700dda65a49dbdea65\jetified-core-202108261754\AndroidManifest.xml:17:5-58:19
+MERGED from [app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cf264264f2829f700dda65a49dbdea65\jetified-core-202108261754\AndroidManifest.xml:17:5-58:19
+>>>>>>> aa124d7c0e21854c5e7f7d77c03afd8b08e603ef
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.1] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b66d39b8468bd8d58445227932b7c47b/core-1.3.1/AndroidManifest.xml:24:18-86
 	android:label
+<<<<<<< HEAD
 		ADDED from /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/broker_github/cotton_broker/android/app/src/main/AndroidManifest.xml:13:7-39
 		ADDED from /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/broker_github/cotton_broker/android/app/src/main/AndroidManifest.xml:13:7-39
 	tools:ignore
@@ -492,9 +709,282 @@ uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from [com.facebook.flipper:flipper:0.75.1] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/5df2c3954574f8fbe60d78d30679908c/jetified-flipper-0.75.1/AndroidManifest.xml:16:5-76
 MERGED from [:rn-fetch-blob] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/broker_github/cotton_broker/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:5-76
 MERGED from [:rn-fetch-blob] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/broker_github/cotton_broker/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:5-76
+=======
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:13:7-39
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:13:7-39
+	tools:ignore
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\debug\AndroidManifest.xml:10:9-48
+	tools:targetApi
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\debug\AndroidManifest.xml:9:9-29
+	android:icon
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:14:7-41
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:14:7-41
+	android:allowBackup
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:15:7-34
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:15:7-34
+	android:theme
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:16:7-38
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:16:7-38
+	android:usesCleartextTraffic
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\debug\AndroidManifest.xml:8:9-44
+	android:name
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:12:7-38
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:12:7-38
+activity#com.cottonbidbroker.MainActivity
+ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:17:7-27:18
+	android:label
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:19:9-41
+	android:launchMode
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:21:9-40
+	android:windowSoftInputMode
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:22:9-51
+	android:configChanges
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:20:9-86
+	android:name
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:18:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:23:9-26:25
+action#android.intent.action.MAIN
+ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:24:13-65
+	android:name
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:24:21-62
+category#android.intent.category.LAUNCHER
+ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:25:13-73
+	android:name
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml:25:23-70
+uses-sdk
+INJECTED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml
+INJECTED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml
+MERGED from [com.facebook.flipper:flipper:0.75.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\5df2c3954574f8fbe60d78d30679908c\jetified-flipper-0.75.1\AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper:0.75.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\5df2c3954574f8fbe60d78d30679908c\jetified-flipper-0.75.1\AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-network-plugin:0.75.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\d287f9d257aaf3adbd06ecbad9f1ba4e\jetified-flipper-network-plugin-0.75.1\AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-network-plugin:0.75.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\d287f9d257aaf3adbd06ecbad9f1ba4e\jetified-flipper-network-plugin-0.75.1\AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.75.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\05f1b3f6a0f0fd6164b5c4687150fb9a\jetified-flipper-fresco-plugin-0.75.1\AndroidManifest.xml:11:5-13:41
+MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.75.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\05f1b3f6a0f0fd6164b5c4687150fb9a\jetified-flipper-fresco-plugin-0.75.1\AndroidManifest.xml:11:5-13:41
+MERGED from [:notifee_react-native] D:\Github_Projects\cotton_broker\node_modules\@notifee\react-native\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:notifee_react-native] D:\Github_Projects\cotton_broker\node_modules\@notifee\react-native\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-community_async-storage] D:\Github_Projects\cotton_broker\node_modules\@react-native-community\async-storage\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_async-storage] D:\Github_Projects\cotton_broker\node_modules\@react-native-community\async-storage\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_datetimepicker] D:\Github_Projects\cotton_broker\node_modules\@react-native-community\datetimepicker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-community_datetimepicker] D:\Github_Projects\cotton_broker\node_modules\@react-native-community\datetimepicker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase_app] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-firebase_app] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-picker_picker] D:\Github_Projects\cotton_broker\node_modules\@react-native-picker\picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-picker_picker] D:\Github_Projects\cotton_broker\node_modules\@react-native-picker\picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-aes-crypto] D:\Github_Projects\cotton_broker\node_modules\react-native-aes-crypto\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-aes-crypto] D:\Github_Projects\cotton_broker\node_modules\react-native-aes-crypto\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-document-picker] D:\Github_Projects\cotton_broker\node_modules\react-native-document-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-document-picker] D:\Github_Projects\cotton_broker\node_modules\react-native-document-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-encrypted-storage] D:\Github_Projects\cotton_broker\node_modules\react-native-encrypted-storage\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-10:41
+MERGED from [:react-native-encrypted-storage] D:\Github_Projects\cotton_broker\node_modules\react-native-encrypted-storage\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-10:41
+MERGED from [:react-native-gesture-handler] D:\Github_Projects\cotton_broker\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] D:\Github_Projects\cotton_broker\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] D:\Github_Projects\cotton_broker\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-image-picker] D:\Github_Projects\cotton_broker\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-otp-verify] D:\Github_Projects\cotton_broker\node_modules\react-native-otp-verify\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-otp-verify] D:\Github_Projects\cotton_broker\node_modules\react-native-otp-verify\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-pager-view] D:\Github_Projects\cotton_broker\node_modules\react-native-pager-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-pager-view] D:\Github_Projects\cotton_broker\node_modules\react-native-pager-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-safe-area-context] D:\Github_Projects\cotton_broker\node_modules\react-native-safe-area-context\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-safe-area-context] D:\Github_Projects\cotton_broker\node_modules\react-native-safe-area-context\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-screens] D:\Github_Projects\cotton_broker\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-screens] D:\Github_Projects\cotton_broker\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-simple-crypto] D:\Github_Projects\cotton_broker\node_modules\react-native-simple-crypto\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-simple-crypto] D:\Github_Projects\cotton_broker\node_modules\react-native-simple-crypto\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-svg] D:\Github_Projects\cotton_broker\node_modules\react-native-svg\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-svg] D:\Github_Projects\cotton_broker\node_modules\react-native-svg\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] D:\Github_Projects\cotton_broker\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] D:\Github_Projects\cotton_broker\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:rn-fetch-blob] D:\Github_Projects\cotton_broker\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:rn-fetch-blob] D:\Github_Projects\cotton_broker\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.64.2] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\71a5f50531bb8cb223eb85b45f847587\jetified-react-native-0.64.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.64.2] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\71a5f50531bb8cb223eb85b45f847587\jetified-react-native-0.64.2\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\98a0074b4f7d2f50c4a40fcd3bd6a13b\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\98a0074b4f7d2f50c4a40fcd3bd6a13b\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bf2b2b271f61226312905c5c85dc4155\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bf2b2b271f61226312905c5c85dc4155\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\f3fcf500f016298a072f95d02db6f575\multidex-2.0.1\AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\f3fcf500f016298a072f95d02db6f575\multidex-2.0.1\AndroidManifest.xml:20:5-43
+MERGED from [org.webkit:android-jsc:r245459] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\1e9b6315c33f4317ccafd3212a07b572\jetified-android-jsc-r245459\AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\1e9b6315c33f4317ccafd3212a07b572\jetified-android-jsc-r245459\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e4fd85eadb40ae7d231f7303a1f10ae6\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e4fd85eadb40ae7d231f7303a1f10ae6\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e451fee15652f592c899e0d6381e4f4f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e451fee15652f592c899e0d6381e4f4f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e24aa0b98dd4aa7756cdbf5fa65f32f4\jetified-firebase-encoders-json-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e24aa0b98dd4aa7756cdbf5fa65f32f4\jetified-firebase-encoders-json-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\99da45bd6427910f40b54502e54f29b5\jetified-firebase-installations-17.0.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\99da45bd6427910f40b54502e54f29b5\jetified-firebase-installations-17.0.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9f11b5e3f42f75b9af0a3d25c5f956c4\jetified-firebase-common-20.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9f11b5e3f42f75b9af0a3d25c5f956c4\jetified-firebase-common-20.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.fresco:flipper:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\dbb52941b18c804406a9fe327cdc7574\jetified-flipper-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:flipper:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\dbb52941b18c804406a9fe327cdc7574\jetified-flipper-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:stetho:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\70dd97d147c5d8e40a04098e31a18b48\jetified-stetho-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:stetho:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\70dd97d147c5d8e40a04098e31a18b48\jetified-stetho-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\69122a7147471e0c5c9b61dabfd681b5\jetified-fresco-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\69122a7147471e0c5c9b61dabfd681b5\jetified-fresco-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\1f24b309e3abbb1816aaa2713c639a1e\jetified-drawee-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\1f24b309e3abbb1816aaa2713c639a1e\jetified-drawee-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\ab83d1a5b10f9696cb9b063e69eccf99\jetified-nativeimagefilters-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\ab83d1a5b10f9696cb9b063e69eccf99\jetified-nativeimagefilters-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-native:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b81833eee405d36cc60034accd03e5a3\jetified-memory-type-native-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-native:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b81833eee405d36cc60034accd03e5a3\jetified-memory-type-native-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-java:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\473fb6acab9fc257a840701168f90e21\jetified-memory-type-java-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-java:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\473fb6acab9fc257a840701168f90e21\jetified-memory-type-java-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-native:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e56a7a09db284613f8cbab0a341829ce\jetified-imagepipeline-native-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-native:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e56a7a09db284613f8cbab0a341829ce\jetified-imagepipeline-native-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:soloader:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\24f25925a79be76a0cc94c3166774e95\jetified-soloader-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:soloader:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\24f25925a79be76a0cc94c3166774e95\jetified-soloader-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.10.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\116d81a9febf650b27987c1f63b2fe71\jetified-soloader-0.10.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.10.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\116d81a9febf650b27987c1f63b2fe71\jetified-soloader-0.10.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b2b7e91e1d6a21c39076c0228ed0575f\material-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b2b7e91e1d6a21c39076c0228ed0575f\material-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\4ff7bd7275a648928c634d16a06248bd\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\4ff7bd7275a648928c634d16a06248bd\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.room:room-runtime:2.2.5] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\13ffe9b8c3fbe84db414b6fdccb41514\room-runtime-2.2.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.2.5] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\13ffe9b8c3fbe84db414b6fdccb41514\room-runtime-2.2.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\d5575b0b04b296ed928544e2a10e0e4d\sqlite-framework-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\d5575b0b04b296ed928544e2a10e0e4d\sqlite-framework-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\c01df15573a4b0d58928039e6488c559\jetified-imagepipeline-okhttp3-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\c01df15573a4b0d58928039e6488c559\jetified-imagepipeline-okhttp3-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-ashmem:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\ce9125b5302dccfb52871bd2af5f033b\jetified-memory-type-ashmem-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:memory-type-ashmem:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\ce9125b5302dccfb52871bd2af5f033b\jetified-memory-type-ashmem-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\0e6bfedf1b1f4edaee8cfb822e4628f6\jetified-imagepipeline-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\0e6bfedf1b1f4edaee8cfb822e4628f6\jetified-imagepipeline-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8466bf8f40d44ffac57d85f93412b0f6\jetified-nativeimagetranscoder-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8466bf8f40d44ffac57d85f93412b0f6\jetified-nativeimagetranscoder-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\c4faf97c76e0dbc2db12c4178a7cfffc\jetified-imagepipeline-base-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\c4faf97c76e0dbc2db12c4178a7cfffc\jetified-imagepipeline-base-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\2027c98b5862800401a4ef76869fe91d\jetified-transport-runtime-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\2027c98b5862800401a4ef76869fe91d\jetified-transport-runtime-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\97e92e3e4e11ab6110066fcaf9b9a0eb\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\97e92e3e4e11ab6110066fcaf9b9a0eb\jetified-appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\91ff908d24dc1d3019f2977bcf8acf46\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\91ff908d24dc1d3019f2977bcf8acf46\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\d7ae7023aad5c9248184b319dc635e8b\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\d7ae7023aad5c9248184b319dc635e8b\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.security:security-crypto:1.1.0-alpha03] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\982321a5fbefda3a4e01f5ab28d19e7f\jetified-security-crypto-1.1.0-alpha03\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.security:security-crypto:1.1.0-alpha03] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\982321a5fbefda3a4e01f5ab28d19e7f\jetified-security-crypto-1.1.0-alpha03\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bdd1d24141ef5678c73cdc6002c75d2b\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bdd1d24141ef5678c73cdc6002c75d2b\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-auth:19.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9d34607ee6e38ff40bda9abdf58e7d01\jetified-play-services-auth-19.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:19.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9d34607ee6e38ff40bda9abdf58e7d01\jetified-play-services-auth-19.2.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\dd1a00b279bd095cb743a191eefc189f\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\dd1a00b279bd095cb743a191eefc189f\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\85302179f97e4316b83232457d5aa30e\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\85302179f97e4316b83232457d5aa30e\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\7853f7760dde1974e2d8ff0bb2a30790\jetified-firebase-installations-interop-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\7853f7760dde1974e2d8ff0bb2a30790\jetified-firebase-installations-interop-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\ebc46345ce0262ddd001ec805cb7ea60\jetified-play-services-auth-api-phone-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\ebc46345ce0262ddd001ec805cb7ea60\jetified-play-services-auth-api-phone-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\544aeba015f7acc2d0574c233c634fa9\jetified-play-services-auth-base-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\544aeba015f7acc2d0574c233c634fa9\jetified-play-services-auth-base-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\490acf12c4f9537c3d0b9389b60c4264\jetified-play-services-base-17.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\490acf12c4f9537c3d0b9389b60c4264\jetified-play-services-base-17.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.2.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\3e9d407562c93e1d562f3440219f0727\jetified-play-services-tasks-17.2.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.2.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\3e9d407562c93e1d562f3440219f0727\jetified-play-services-tasks-17.2.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bdcca1d8e12f717078a8962cc63ce87f\jetified-play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bdcca1d8e12f717078a8962cc63ce87f\jetified-play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\68c5edb17144d88b6998bd6e9db428e3\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\68c5edb17144d88b6998bd6e9db428e3\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.6.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\a16b3ff6a5eba037cbe6de6c71f0c6fd\jetified-play-services-basement-17.6.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.6.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\a16b3ff6a5eba037cbe6de6c71f0c6fd\jetified-play-services-basement-17.6.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.2.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\047a5f061538c53988fd9d412c8d45af\fragment-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\047a5f061538c53988fd9d412c8d45af\fragment-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\4c12057915a2d5f0c4c22e27c61f3b07\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\4c12057915a2d5f0c4c22e27c61f3b07\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\c8cf26f66a2ea12fdcc455381ee0961c\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\c8cf26f66a2ea12fdcc455381ee0961c\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\119310b3f9dbf1020dcf56e5abfe0fde\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\119310b3f9dbf1020dcf56e5abfe0fde\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\d46ac55a22a49ff303fb3b05252402b0\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\d46ac55a22a49ff303fb3b05252402b0\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\efe084eebb68b47d251216493a2a455c\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\efe084eebb68b47d251216493a2a455c\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8fbada0f7d71cd402a3e62ceb99f2e09\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8fbada0f7d71cd402a3e62ceb99f2e09\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\ab55cacd6c13d175051551c1ee2cab4b\jetified-activity-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\ab55cacd6c13d175051551c1ee2cab4b\jetified-activity-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\a765f451519e2af35956db722cdbbf89\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\a765f451519e2af35956db722cdbbf89\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\fa1e53f93d0ab754f6f4bb99c21639d7\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\fa1e53f93d0ab754f6f4bb99c21639d7\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\dd7f663ef912709eec0fc50ae14901f4\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\dd7f663ef912709eec0fc50ae14901f4\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b66d39b8468bd8d58445227932b7c47b\core-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b66d39b8468bd8d58445227932b7c47b\core-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\19eba67f2669335d77568439c1bdd497\exifinterface-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\19eba67f2669335d77568439c1bdd497\exifinterface-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6b78242eb4af598a7f94a484bb43bf84\jetified-transport-api-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6b78242eb4af598a7f94a484bb43bf84\jetified-transport-api-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cfd678dceb512dc7497e09cbcabb95ca\jetified-firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cfd678dceb512dc7497e09cbcabb95ca\jetified-firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\255b19969b1aa3fb452ea5e5d7583495\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\255b19969b1aa3fb452ea5e5d7583495\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\be78f022ca08bb1193d8740d29692852\sqlite-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\be78f022ca08bb1193d8740d29692852\sqlite-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\36be02a4a03f9c80239bf905cf28d49c\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\36be02a4a03f9c80239bf905cf28d49c\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b5921e6441617bb9c096abf22f9a76af\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\b5921e6441617bb9c096abf22f9a76af\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\a998af6182292fb7596d2d8033521f00\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\a998af6182292fb7596d2d8033521f00\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\0aeffa75962169198b450d028f628cac\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\0aeffa75962169198b450d028f628cac\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\ee6ca70fa3e69df084611f36b161cd2a\lifecycle-livedata-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\ee6ca70fa3e69df084611f36b161cd2a\lifecycle-livedata-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6c842012178132d98974af134ee83251\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\6c842012178132d98974af134ee83251\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e7ea8b838c80ef59cc03c3ae4fcb9f1f\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e7ea8b838c80ef59cc03c3ae4fcb9f1f\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\ecc91242b54a7db61993588754cc6d5d\jetified-lifecycle-service-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\ecc91242b54a7db61993588754cc6d5d\jetified-lifecycle-service-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\437522818eff986609719c3ca7de8cd0\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\437522818eff986609719c3ca7de8cd0\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\95006269786786548412d3584d554cb1\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\95006269786786548412d3584d554cb1\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\16c6f2dc8525f64c9d9be6cf20d37aa4\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\16c6f2dc8525f64c9d9be6cf20d37aa4\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\4ff67378117cc4bce03835332d0c7d86\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\4ff67378117cc4bce03835332d0c7d86\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\759db0b4ac40eb0a386bb7469ef53eab\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\759db0b4ac40eb0a386bb7469ef53eab\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cf264264f2829f700dda65a49dbdea65\jetified-core-202108261754\AndroidManifest.xml:5:5-7:41
+MERGED from [app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cf264264f2829f700dda65a49dbdea65\jetified-core-202108261754\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\164715a0e1bca1d1afdba2df3bc8012f\jetified-fbcore-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\164715a0e1bca1d1afdba2df3bc8012f\jetified-fbcore-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:ui-common:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\63c38d26f33d896e9d039b3af38a845d\jetified-ui-common-2.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:ui-common:2.2.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\63c38d26f33d896e9d039b3af38a845d\jetified-ui-common-2.2.0\AndroidManifest.xml:5:5-7:41
+INJECTED from D:\Github_Projects\cotton_broker\android\app\src\debug\AndroidManifest.xml
+INJECTED from D:\Github_Projects\cotton_broker\android\app\src\debug\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Github_Projects\cotton_broker\android\app\src\debug\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Github_Projects\cotton_broker\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Github_Projects\cotton_broker\android\app\src\debug\AndroidManifest.xml
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from D:\Github_Projects\cotton_broker\android\app\src\debug\AndroidManifest.xml:5:5-77
+	android:name
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\debug\AndroidManifest.xml:5:22-75
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from D:\Github_Projects\cotton_broker\android\app\src\debug\AndroidManifest.xml:11:9-86
+	android:name
+		ADDED from D:\Github_Projects\cotton_broker\android\app\src\debug\AndroidManifest.xml:11:19-83
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [com.facebook.flipper:flipper:0.75.1] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\5df2c3954574f8fbe60d78d30679908c\jetified-flipper-0.75.1\AndroidManifest.xml:16:5-76
+MERGED from [:rn-fetch-blob] D:\Github_Projects\cotton_broker\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:5-76
+MERGED from [:rn-fetch-blob] D:\Github_Projects\cotton_broker\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:5-76
+>>>>>>> aa124d7c0e21854c5e7f7d77c03afd8b08e603ef
 	android:name
 		ADDED from [com.facebook.flipper:flipper:0.75.1] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/5df2c3954574f8fbe60d78d30679908c/jetified-flipper-0.75.1/AndroidManifest.xml:16:22-73
 provider#io.invertase.notifee.NotifeeInitProvider
+<<<<<<< HEAD
 ADDED from [:notifee_react-native] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/broker_github/cotton_broker/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-16:40
 	android:authorities
 		ADDED from [:notifee_react-native] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/broker_github/cotton_broker/node_modules/@notifee/react-native/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-73
@@ -602,6 +1092,115 @@ MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/empiere-m
 MERGED from [com.google.firebase:firebase-installations:17.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/99da45bd6427910f40b54502e54f29b5/jetified-firebase-installations-17.0.0/AndroidManifest.xml:15:9-21:19
 MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/9f11b5e3f42f75b9af0a3d25c5f956c4/jetified-firebase-common-20.0.0/AndroidManifest.xml:33:9-37:35
 MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/9f11b5e3f42f75b9af0a3d25c5f956c4/jetified-firebase-common-20.0.0/AndroidManifest.xml:33:9-37:35
+=======
+ADDED from [:notifee_react-native] D:\Github_Projects\cotton_broker\node_modules\@notifee\react-native\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-16:40
+	android:authorities
+		ADDED from [:notifee_react-native] D:\Github_Projects\cotton_broker\node_modules\@notifee\react-native\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-73
+	android:exported
+		ADDED from [:notifee_react-native] D:\Github_Projects\cotton_broker\node_modules\@notifee\react-native\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
+	android:initOrder
+		ADDED from [:notifee_react-native] D:\Github_Projects\cotton_broker\node_modules\@notifee\react-native\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-37
+	android:name
+		ADDED from [:notifee_react-native] D:\Github_Projects\cotton_broker\node_modules\@notifee\react-native\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-68
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-68
+MERGED from [:rn-fetch-blob] D:\Github_Projects\cotton_broker\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:5-68
+MERGED from [:rn-fetch-blob] D:\Github_Projects\cotton_broker\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:5-68
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bf2b2b271f61226312905c5c85dc4155\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:23:5-68
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bf2b2b271f61226312905c5c85dc4155\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:23:5-68
+MERGED from [androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:25:5-68
+MERGED from [androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\dd1a00b279bd095cb743a191eefc189f\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\dd1a00b279bd095cb743a191eefc189f\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:9:5-68
+MERGED from [app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cf264264f2829f700dda65a49dbdea65\jetified-core-202108261754\AndroidManifest.xml:9:5-68
+MERGED from [app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cf264264f2829f700dda65a49dbdea65\jetified-core-202108261754\AndroidManifest.xml:9:5-68
+	android:name
+		ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-79
+MERGED from [:rn-fetch-blob] D:\Github_Projects\cotton_broker\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:5-79
+MERGED from [:rn-fetch-blob] D:\Github_Projects\cotton_broker\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:5-79
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bf2b2b271f61226312905c5c85dc4155\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bf2b2b271f61226312905c5c85dc4155\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e451fee15652f592c899e0d6381e4f4f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e451fee15652f592c899e0d6381e4f4f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\99da45bd6427910f40b54502e54f29b5\jetified-firebase-installations-17.0.0\AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\99da45bd6427910f40b54502e54f29b5\jetified-firebase-installations-17.0.0\AndroidManifest.xml:10:5-79
+MERGED from [androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:26:5-79
+MERGED from [androidx.work:work-runtime:2.5.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\8d579dd45748d87fe8b785ebf0b3810b\work-runtime-2.5.0\AndroidManifest.xml:26:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\2027c98b5862800401a4ef76869fe91d\jetified-transport-runtime-3.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\2027c98b5862800401a4ef76869fe91d\jetified-transport-runtime-3.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\dd1a00b279bd095cb743a191eefc189f\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\dd1a00b279bd095cb743a191eefc189f\jetified-play-services-cloud-messaging-16.0.0\AndroidManifest.xml:7:5-79
+MERGED from [app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cf264264f2829f700dda65a49dbdea65\jetified-core-202108261754\AndroidManifest.xml:10:5-79
+MERGED from [app.notifee:core:202108261754] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\cf264264f2829f700dda65a49dbdea65\jetified-core-202108261754\AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:22-76
+service#io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService
+ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-111
+	android:name
+		ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:18-108
+service#io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService
+ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:9-23:19
+	android:exported
+		ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-37
+	android:name
+		ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-95
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-22:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:17-78
+	android:name
+		ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:25-75
+receiver#io.invertase.firebase.messaging.ReactNativeFirebaseMessagingReceiver
+ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:9-32:20
+	android:exported
+		ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-36
+	android:permission
+		ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-73
+	android:name
+		ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-96
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:13-31:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:17-81
+	android:name
+		ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:25-78
+meta-data#firebase_messaging_auto_init_enabled
+ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:34:9-36:36
+	android:value
+		ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:13-33
+	android:name
+		ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:35:13-64
+meta-data#com.google.firebase.messaging.default_notification_channel_id
+ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:9-39:32
+	android:value
+		ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:13-29
+	android:name
+		ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:13-89
+meta-data#com.google.firebase.messaging.default_notification_color
+ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:9-42:47
+	android:resource
+		ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:13-44
+	android:name
+		ADDED from [:react-native-firebase_messaging] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\messaging\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:13-84
+meta-data#app_data_collection_default_enabled
+ADDED from [:react-native-firebase_app] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-14:36
+	android:value
+		ADDED from [:react-native-firebase_app] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-33
+	android:name
+		ADDED from [:react-native-firebase_app] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-63
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [:react-native-firebase_app] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-20:19
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bf2b2b271f61226312905c5c85dc4155\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:49:9-55:19
+MERGED from [com.google.firebase:firebase-messaging:22.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\bf2b2b271f61226312905c5c85dc4155\jetified-firebase-messaging-22.0.0\AndroidManifest.xml:49:9-55:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e4fd85eadb40ae7d231f7303a1f10ae6\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\e4fd85eadb40ae7d231f7303a1f10ae6\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\99da45bd6427910f40b54502e54f29b5\jetified-firebase-installations-17.0.0\AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\99da45bd6427910f40b54502e54f29b5\jetified-firebase-installations-17.0.0\AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9f11b5e3f42f75b9af0a3d25c5f956c4\jetified-firebase-common-20.0.0\AndroidManifest.xml:33:9-37:35
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\hp\.gradle\caches\transforms-2\files-2.1\9f11b5e3f42f75b9af0a3d25c5f956c4\jetified-firebase-common-20.0.0\AndroidManifest.xml:33:9-37:35
+>>>>>>> aa124d7c0e21854c5e7f7d77c03afd8b08e603ef
 	android:exported
 		ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/bf2b2b271f61226312905c5c85dc4155/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:51:13-37
 	tools:targetApi
@@ -609,6 +1208,7 @@ MERGED from [com.google.firebase:firebase-common:20.0.0] /Users/empiere-mac/.gra
 	android:directBootAware
 		ADDED from [com.google.firebase:firebase-common:20.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/9f11b5e3f42f75b9af0a3d25c5f956c4/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
 	android:name
+<<<<<<< HEAD
 		ADDED from [:react-native-firebase_app] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/broker_github/cotton_broker/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:18-89
 meta-data#com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar
 ADDED from [:react-native-firebase_app] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/broker_github/cotton_broker/node_modules/@react-native-firebase/app/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:85
@@ -656,6 +1256,55 @@ ADDED from [:rn-fetch-blob] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik
 		ADDED from [:rn-fetch-blob] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/broker_github/cotton_broker/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-37
 	android:name
 		ADDED from [:rn-fetch-blob] /Users/empiere-mac/ReactNativeProjects/washim/Bhavik/broker_github/cotton_broker/node_modules/rn-fetch-blob/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:37:13-62
+=======
+		ADDED from [:react-native-firebase_app] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:18-89
+meta-data#com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar
+ADDED from [:react-native-firebase_app] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-19:85
+	android:value
+		ADDED from [:react-native-firebase_app] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:17-82
+	android:name
+		ADDED from [:react-native-firebase_app] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-120
+provider#io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider
+ADDED from [:react-native-firebase_app] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:9-26:38
+	android:authorities
+		ADDED from [:react-native-firebase_app] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:13-86
+	android:exported
+		ADDED from [:react-native-firebase_app] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-37
+	android:initOrder
+		ADDED from [:react-native-firebase_app] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-35
+	android:name
+		ADDED from [:react-native-firebase_app] D:\Github_Projects\cotton_broker\node_modules\@react-native-firebase\app\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:13-88
+provider#com.imagepicker.ImagePickerProvider
+ADDED from [:react-native-image-picker] D:\Github_Projects\cotton_broker\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-20:20
+	android:grantUriPermissions
+		ADDED from [:react-native-image-picker] D:\Github_Projects\cotton_broker\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-47
+	android:authorities
+		ADDED from [:react-native-image-picker] D:\Github_Projects\cotton_broker\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-71
+	android:exported
+		ADDED from [:react-native-image-picker] D:\Github_Projects\cotton_broker\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
+	android:name
+		ADDED from [:react-native-image-picker] D:\Github_Projects\cotton_broker\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-63
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:react-native-image-picker] D:\Github_Projects\cotton_broker\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-19:70
+	android:resource
+		ADDED from [:react-native-image-picker] D:\Github_Projects\cotton_broker\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:17-67
+	android:name
+		ADDED from [:react-native-image-picker] D:\Github_Projects\cotton_broker\node_modules\react-native-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-67
+uses-permission#com.android.vending.CHECK_LICENSE
+ADDED from [:rn-fetch-blob] D:\Github_Projects\cotton_broker\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-73
+	android:name
+		ADDED from [:rn-fetch-blob] D:\Github_Projects\cotton_broker\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-70
+provider#com.RNFetchBlob.Utils.FileProvider
+ADDED from [:rn-fetch-blob] D:\Github_Projects\cotton_broker\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:9-44:20
+	android:grantUriPermissions
+		ADDED from [:rn-fetch-blob] D:\Github_Projects\cotton_broker\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:13-47
+	android:authorities
+		ADDED from [:rn-fetch-blob] D:\Github_Projects\cotton_broker\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:13-60
+	android:exported
+		ADDED from [:rn-fetch-blob] D:\Github_Projects\cotton_broker\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:13-37
+	android:name
+		ADDED from [:rn-fetch-blob] D:\Github_Projects\cotton_broker\node_modules\rn-fetch-blob\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:13-62
+>>>>>>> aa124d7c0e21854c5e7f7d77c03afd8b08e603ef
 uses-permission#com.google.android.c2dm.permission.RECEIVE
 ADDED from [com.google.firebase:firebase-messaging:22.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/bf2b2b271f61226312905c5c85dc4155/jetified-firebase-messaging-22.0.0/AndroidManifest.xml:25:5-82
 MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/dd1a00b279bd095cb743a191eefc189f/jetified-play-services-cloud-messaging-16.0.0/AndroidManifest.xml:11:5-82

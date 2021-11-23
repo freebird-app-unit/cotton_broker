@@ -299,7 +299,7 @@ const RegisterScreen = ({navigation, ref}) => {
   };
 
   const getDistrictList = stateID => {
-    //setLoading(true)
+    setLoading(true)
     setStateError(null);
     setValueState(stateID);
     let data = {state_id: stateID};

@@ -9,6 +9,7 @@ import {
 } from '../components/responsive-ratio';
 import { Avatar } from 'react-native-paper';
 import Stamp_Icon from '../assets/Stamp';
+import Header_Icon from '../assets/Header';
 import Button from '../components/Button';
 import axios from 'axios';
 import api_config from '../Api/api';

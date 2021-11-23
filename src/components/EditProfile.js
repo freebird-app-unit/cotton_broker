@@ -15,6 +15,7 @@ import {
 // import TextInput from '../components/TextInput';
 // import { FlatList } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import Header_Icon from '../assets/Header';
 
 // const EditProfile = ({ navigation }) => {
 
@@ -484,6 +485,7 @@ const UpdateScreen = ({ navigation, ref, route }) => {
 
     useEffect(async () => {
         try {
+            
             setLoading(true);
             // setFilePath({});
             var minOffset = 0,
@@ -600,7 +602,6 @@ const UpdateScreen = ({ navigation, ref, route }) => {
         setLoading(true);
         setStateError(null);
         setValueState(stateID);
-
         let data = { state_id: stateID };
         console.log('District data: ' + JSON.stringify(data));
         const formData = new FormData();
@@ -858,16 +859,20 @@ const UpdateScreen = ({ navigation, ref, route }) => {
         const formData = new FormData();
 
         formData.append('data', JSON.stringify(data));
-        formData.append('stamp_image', {
-            uri: filePath.assets[0].uri,
-            name: Math.floor(Date.now() / 1000) + '.jpg',
-            type: 'image/jpg',
-        });
-        formData.append('header_image', {
-            uri: HeaderfilePath.assets[0].uri,
-            name: Math.floor(Date.now() / 1000) + '.jpg',
-            type: 'image/jpg',
-        });
+        if(filePath.assets[0].uri != '') {
+            formData.append('stamp_image', {
+                uri: filePath.assets[0].uri,
+                name: Math.floor(Date.now() / 1000) + '.jpg',
+                type: 'image/jpg',
+            });
+        }
+        if(HeaderfilePath.assets[0].uri != '') {
+            formData.append('header_image', {
+                uri: HeaderfilePath.assets[0].uri,
+                name: Math.floor(Date.now() / 1000) + '.jpg',
+                type: 'image/jpg',
+            });
+        }
         // formData.append('footer', {
         //     uri: FooterfilePath.assets[0].uri,
         //     name: Math.floor(Date.now() / 1000) + '.jpg',
@@ -1521,8 +1526,8 @@ const UpdateScreen = ({ navigation, ref, route }) => {
                                     Header
                                 </Text>
                                 <TouchableOpacity onPress={onUploadHeaderStampClicked}>
-                                    {Object.keys(HeaderfilePath).length == 0 ? (
-                                        <Stamp_Icon name='Upload Signature' />
+                                    {HeaderfilePath.assets[0].uri == '' ? (
+                                        <Header_Icon name='Upload Signature' />
                                     ) : (
                                         <Image
                                             style={{ width: 100, height: 100, borderRadius: 10 }}
@@ -1575,7 +1580,7 @@ const UpdateScreen = ({ navigation, ref, route }) => {
                                     Stamp
                                 </Text>
                                 <TouchableOpacity onPress={onUploadStampClicked}>
-                                    {Object.keys(filePath).length == 0 ? (
+                                    {filePath.assets[0].uri == '' ? (
                                         <Stamp_Icon name='Upload Signature' />
                                     ) : (
                                         <Image

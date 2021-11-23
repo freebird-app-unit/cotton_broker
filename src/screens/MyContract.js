@@ -368,8 +368,12 @@ class App extends Component {
                     arrDealDetails = [],
                     //displayDate = el.deal_final_date.split(','),
                     displayDate = el.deal_date,
+<<<<<<< HEAD
                     arrDealDetails = el.deal_details,
 
+=======
+                    //arrDealDetails = el.deal_details,
+>>>>>>> aa124d7c0e21854c5e7f7d77c03afd8b08e603ef
                     arrDealDetails = el.deal_details.filter(dl => dl.lab_report_status != "fail_with_renegotiation"),
                     //console.log("Hello Bhavin Thakkar: " + arrDealDetails.length),
 
