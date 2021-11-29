@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { theme } from './core/theme'
 import { View, Text, Alert, StatusBar, Image } from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import FilterSettings from './assets/FilterSettings';
 
 import styles from './screens/Styles'
 
@@ -43,32 +44,33 @@ import {
     widthPercentageToDP as wp,
     heightPercentageToDP as hp,
 } from './components/responsive-ratio';
+import { baseProps } from 'react-native-gesture-handler/lib/typescript/handlers/gestureHandlers';
 const Stack = createStackNavigator()
 const Tab = createMaterialTopTabNavigator();
 const AppHeading = (props) => {
     console.log('props', props)
     return (
-        <View style={{ width: '100%', height: hp(9), marginTop: hp(4) }}>
+        <View style={{ width: '100%', height: hp(10), marginTop: hp(4.5) }}>
             <Appbar.Header style={{ backgroundColor: 'transparent' }}>
                 {props.menu ? <Appbar.Action
                     icon="menu"
-                    color="white"
+                    color= {props.color ? props.color : "white"}
                     onPress={props.leftPress}
                 /> :
                     <Appbar.Action
-                        icon={() => <Ionicons name='chevron-back-outline' size={hp(3)} color='#fff' />}
-                        color="white"
+                        icon={() => <Ionicons name='chevron-back-outline' size={hp(3)} color={props.color ? props.color : "white"} />}
+                        color={props.color ? props.color : "white"}
                         onPress={props.leftPress}
                     />}
                 <Appbar.Content
                     style={{ alignItems: 'center' }}
-                    color="white"
+                    color={props.color ? props.color : "white"}
                     title={props.title}
                     titleStyle={{ fontSize: 20, fontFamily: "Poppins-SemiBold" }}
                 />
                 {props.filter ? <Appbar.Action
-                    icon="notification-clear-all"
-                    color={"white"}
+                    icon={() => <FilterSettings color={'white'} />}
+                    color={props.color ? props.color : "white"}
                     onPress={
                         props.rightPress
                         // this.setState({ isFilterShow: true });
@@ -129,7 +131,7 @@ const AppHeadingProfile = (props) => {
 const MyContractFunction = ({ navigation, route }) => {
     console.log('navigation>??', route)
     return (
-        <View style={{ flex: 1, backgroundColor: '#333' }}>
+        <View style={{ flex: 1, backgroundColor: '#343434' }}>
             <AppHeading title={'My Contract'} menu filter leftPress={() => navigation.navigate('MenuScreen')} rightPress={() =>
                 navigation.navigate('MyContractFilter', { productList: route.params.productList })} />
             <View
@@ -143,7 +145,7 @@ const MyContractFunction = ({ navigation, route }) => {
 const mcxScreenFunction = ({ navigation, route }) => {
     // console.log('navigation>', navigation)
     return (
-        <View style={{ flex: 1, backgroundColor: '#333' }}>
+        <View style={{ flex: 1, backgroundColor: '#343434' }}>
             <AppHeading title={'MCX'} menu leftPress={() => navigation.navigate('MenuScreen')} />
             <View
                 style={styles.flex}>
@@ -153,8 +155,8 @@ const mcxScreenFunction = ({ navigation, route }) => {
     )
 }
 
-const MyContractFilterFunction = ({ navigation, route }) => <View style={{ flex: 1, backgroundColor: '#333' }}>
-    <AppHeading title={'Filter'} leftPress={() => navigation.goBack()} />
+const MyContractFilterFunction = ({ navigation, route }) => <View style={{ flex: 1, backgroundColor: '#fff' }}>
+    <AppHeading title={'Filter'} color = {'black'} leftPress={() => navigation.goBack()} />
     <View
         style={styles.flex}>
         <MyContractFilter navigation={navigation} route={route} />
@@ -164,7 +166,7 @@ const MyContractFilterFunction = ({ navigation, route }) => <View style={{ flex:
 const MyClientsFunction = ({ navigation, route }) => {
     // console.log('navigation>??', route)
     return (
-        <View style={{ flex: 1, backgroundColor: '#333' }}>
+        <View style={{ flex: 1, backgroundColor: '#343434' }}>
             <AppHeading title={'My Clients'} menu  leftPress={() => navigation.navigate('MenuScreen')} rightPress={() =>
                 navigation.navigate('MyContractFilter', { productList: route.params.productList })} />
             <View
@@ -177,7 +179,7 @@ const MyClientsFunction = ({ navigation, route }) => {
 const ProfileFunction = ({ navigation, route }) => {
     console.log('navigation>?? profiole', route.params)
     return (
-        <View style={{ flex: 1, backgroundColor: '#333' }}>
+        <View style={{ flex: 1, backgroundColor: '#343434' }}>
             <AppHeadingProfile title={'Profile'} menu profile leftPress={() => navigation.navigate('MenuScreen')}
                 rightPress={() => navigation.navigate('EditProfile', { data: route.params != undefined ? route.params.ProfileData : [] })} />
             <View
@@ -202,7 +204,7 @@ const ProfileFunction = ({ navigation, route }) => {
 const home = ({ navigation, route }) => {
     // console.log('navigation>', navigation)
     return (
-        <View style={{ flex: 1, backgroundColor: '#333' }}>
+        <View style={{ flex: 1, backgroundColor: '#343434' }}>
             <AppHeading title={'Dashboard'} menu leftPress={() => navigation.navigate('MenuScreen')} />
             <View
                 style={styles.flex}>
@@ -215,7 +217,7 @@ const home = ({ navigation, route }) => {
 const Request = ({ navigation, route }) => {
     console.log('navigation>', navigation)
     return (
-        <View style={{ flex: 1, backgroundColor: '#333' }}>
+        <View style={{ flex: 1, backgroundColor: '#343434' }}>
             <AppHeading title={'Requests'} menu leftPress={() => navigation.navigate('MenuScreen')} />
             <View
                 style={{
@@ -233,11 +235,22 @@ const Request = ({ navigation, route }) => {
         </View>
     )
 }
+const ChangePasswordFunction = ({ navigation, route }) => {
+    return (
+        <View style={{ flex: 1, backgroundColor: '#333' }}>
+            <AppHeading menu title={'Change Password'} leftPress={() => navigation.navigate('MenuScreen')} />
+            <View
+                style={styles.flex}>
+                <ChangePasswordScreen navigation={navigation} />
+            </View>
+        </View>
+    )
+}
 
 const MyEarningFunction = ({ navigation, route }) => {
     console.log('navigation>', navigation)
     return (
-        <View style={{ flex: 1, backgroundColor: '#333' }}>
+        <View style={{ flex: 1, backgroundColor: '#343434' }}>
             <AppHeading title={'My Earning'} menu leftPress={() => navigation.navigate('MenuScreen')} />
             <View
                 style={{
@@ -259,7 +272,7 @@ const MyEarningFunction = ({ navigation, route }) => {
 const ProfileSeenFunction = ({ navigation, route }) => {
     console.log('navigation>', navigation)
     return (
-        <View style={{ flex: 1, backgroundColor: '#333' }}>
+        <View style={{ flex: 1, backgroundColor: '#343434' }}>
             <AppHeading title={'Profile'} leftPress={() => navigation.goBack()} />
             <View
                 style={{
@@ -281,7 +294,7 @@ const ProfileSeenFunction = ({ navigation, route }) => {
 const tabnavi = ({ navigation }) => {
     console.log('nabvi', navigation)
     return (
-        <View style={{ flex: 1, backgroundColor: '#333', }}>
+        <View style={{ flex: 1, backgroundColor: '#343434', }}>
             <View style={{
                 flexDirection: 'row', paddingHorizontal: wp(5),
                 marginTop: hp(2), height: hp(5), alignItems: 'center', justifyContent: 'space-between'
@@ -387,7 +400,7 @@ const App = () => {
                         component={SetPasswordScreen} />
                     <Stack.Screen
                         name="ChangePasswordScreen"
-                        component={ChangePasswordScreen} />
+                        component={ChangePasswordFunction} />
                     <Stack.Screen name="SplashScreen" component={SplashScreen} />
                     <Stack.Screen name="HomeScreen" component={home} />
                     <Stack.Screen name="Dashboard" component={Dashboard} />

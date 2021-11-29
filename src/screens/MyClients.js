@@ -1027,7 +1027,7 @@ class App extends Component {
                                             mode="text"
                                             uppercase={false}
                                             color={this.state.btnActiveTextColor}
-                                            labelStyle={{ textTransform: 'capitalize', fontSize: 14, fontFamily: "Poppins-Regular" }}>
+                                            labelStyle={{ textTransform: 'capitalize', fontSize: 14, fontFamily: "Poppins-SemiBold" }}>
                                             All
                                         </Button>
                                     </TouchableOpacity>
@@ -1039,7 +1039,7 @@ class App extends Component {
                                             mode="text"
                                             uppercase={false}
                                             color={this.state.btnCompletedTextColor}
-                                            labelStyle={{ textTransform: 'capitalize', fontSize: 14, fontFamily: "Poppins-Regular" }}>
+                                            labelStyle={{ textTransform: 'capitalize', fontSize: 14, fontFamily: "Poppins-SemiBold" }}>
                                             Buyers
                                         </Button>
                                     </TouchableOpacity>
@@ -1051,7 +1051,7 @@ class App extends Component {
                                             mode="text"
                                             uppercase={false}
                                             color={this.state.btnCompletedTextColor}
-                                            labelStyle={{ textTransform: 'capitalize', fontSize: 14, fontFamily: "Poppins-Regular" }}>
+                                            labelStyle={{ textTransform: 'capitalize', fontSize: 14, fontFamily: "Poppins-SemiBold" }}>
                                             Sellers
                                         </Button>
                                     </TouchableOpacity>

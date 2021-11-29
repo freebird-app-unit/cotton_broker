@@ -256,33 +256,31 @@ const LoginScreen = ({route, navigation}) => {
   };
 
   return (
-    <ScrollView
-      showsVerticalScrollIndicator={true}
-      automaticallyAdjustContentInsets={false}
-      keyboardDismissMode="on-drag"
-      contentContainerStyle={{flexGrow: 1}}
-      keyboardShouldPersistTaps="handled">
-      <Background>
+    
+    <View style={{ flex: 1, backgroundColor: '#F0F5F9' }}>
         <Spinner
           //visibility of Overlay Loading Spinner
           visible={loading}
           color="#085cab"
         />
-        <View style={{marginTop: '40%'}}></View>
+     <View style={styles.image}>
         {/* <ME_Icon /> */}
         <Image
-          style={styles.image}
+          style={{ height: '100%', width: '80%' }}
           source={require('../assets/seller_logo.png')}
+          resizeMode={'contain'}
         />
+        </View>
 
         <View
           style={{
-            backgroundColor: '#FFF',
-            width: '120%',
-            marginTop: '20%',
-            height: '70%',
-            borderTopLeftRadius: 25,
-            borderTopRightRadius: 25,
+           backgroundColor: '#fff',
+          // width: '120%',
+          flex: 1,
+          marginTop: '5%',
+          // height: '75%',
+          borderTopLeftRadius: 25,
+          borderTopRightRadius: 25,
           }}>
           <View style={{marginTop: 40}}>
             <TextInput
@@ -330,10 +328,9 @@ const LoginScreen = ({route, navigation}) => {
             onPress={() => navigation.navigate('RegisterScreen')}>
             <Text style={styles.underline}>Create new account</Text>
           </TouchableOpacity>
-          <View style={{alignItems:'center'}}><Text>Version: {defaultMessages.en.versionNumber}</Text></View>
+        <View style={{ alignItems: 'center', bottom: 5}}><Text>Version: {defaultMessages.en.versionNumber}</Text></View>
         </View>
-      </Background>
-    </ScrollView>
+      </View>
   );
 };
 
@@ -369,10 +366,10 @@ const styles = StyleSheet.create({
   forgot: {
     fontSize: 15,
     color: theme.colors.primary,
-    fontFamily: "Poppins-Regular"
+    fontFamily: 'Poppins-Regular'
   },
   link: {
-    fontFamily: "Poppins-SemiBold",
+    fontWeight: 'bold',
     color: theme.colors.primary,
   },
   label: {
@@ -385,15 +382,16 @@ const styles = StyleSheet.create({
   underline: {
     textDecorationLine: 'underline',
     fontSize: 20,
-    marginTop: 40,
-    paddingBottom: 40,
+    marginTop: 30,
+    paddingBottom: 30,
     color: theme.colors.primary,
     textAlign: 'center',
-    fontFamily: "Poppins-Regular"
+    fontFamily: 'Poppins-Regular'
+
   },
   image: {
-    width: 235,
-    height: 175,
+    width: '100%',
+    height: '46%',alignItems:'center', justifyContent: 'center'
   },
 });
 

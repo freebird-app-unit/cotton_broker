@@ -368,12 +368,7 @@ class App extends Component {
                     arrDealDetails = [],
                     //displayDate = el.deal_final_date.split(','),
                     displayDate = el.deal_date,
-<<<<<<< HEAD
-                    arrDealDetails = el.deal_details,
-
-=======
                     //arrDealDetails = el.deal_details,
->>>>>>> aa124d7c0e21854c5e7f7d77c03afd8b08e603ef
                     arrDealDetails = el.deal_details.filter(dl => dl.lab_report_status != "fail_with_renegotiation"),
                     //console.log("Hello Bhavin Thakkar: " + arrDealDetails.length),
 
@@ -526,6 +521,7 @@ class App extends Component {
                                                         alignItems: 'center',
                                                         color: 'white',
                                                         borderRadius: 5,
+                                                        paddingTop:3,
                                                         backgroundColor: '#69BA53',
                                                         textAlignVertical: 'center',
                                                         fontFamily: 'Poppins-Regular'
@@ -551,6 +547,9 @@ class App extends Component {
                                                                 borderRadius: 5,
                                                                 backgroundColor: (dd.is_broker_otp_verify == 1) ? 'rgba(105, 186, 83, 0.7)' : '#69BA53',
                                                                 textAlignVertical: 'center',
+                                                                fontFamily: 'Poppins-Regular',
+                                                        paddingTop: 3,
+
                                                             }}>
                                                             Pending Verification
                                                         </Text>

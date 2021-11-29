@@ -152,7 +152,7 @@ const NavigationButton = (props) => {
                 mode="text"
                 uppercase={false}
                 color={theme.colors.blackBG}
-                labelStyle={{ fontWeight: 'normal', height: 20 }}>
+                labelStyle={{ fontFamily:'Poppins-Medium', height: 20 }}>
                 {props.Title}
             </Button>
         </View>

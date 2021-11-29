@@ -216,12 +216,13 @@ module.exports = {
 
     dropdown3BtnStyle: {
         width: '100%',
-        height: 50,
+        height: 45,
         backgroundColor: '#FFF',
         paddingHorizontal: 0,
         borderWidth: 1,
         borderRadius: 4,
-        borderColor: '#444',
+        borderColor: 'lightgray',
+
         left: 0,
     },
     dropdown3BtnChildStyle: {
@@ -238,6 +239,10 @@ module.exports = {
         fontWeight: 'normal',
         fontSize: 16,
         marginHorizontal: 0,
+        fontSize: hp(1.9),
+
+        fontFamily: 'Poppins-Regular'
+
     },
     dropdown3DropdownStyle: { backgroundColor: 'white', marginTop: hp(-4) },
     dropdown3RowStyle: {
@@ -256,7 +261,7 @@ module.exports = {
     dropdown3RowTxt: {
         color: '#000',
         textAlign: 'center',
-        fontWeight: 'normal',
+        fontFamily:'Poppins-Regular',
         fontSize: 16,
         marginHorizontal: 0,
         width: '100%',

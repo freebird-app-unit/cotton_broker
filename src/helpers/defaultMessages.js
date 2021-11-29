@@ -19,7 +19,7 @@ const defaultMessages = {
     hasSpecialCharacter: 'The field "{0}" must contain a special character.',
     dropdownSelection:'Please select {0}',
     serverNotRespondingMsg:'We are sorry but an unexpected error occurred while processing your request. Please try again.',
-    versionNumber: '1.0'
+    versionNumber: '1.1'
   },
   //Arabic language
   ar: {

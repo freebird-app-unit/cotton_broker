@@ -1,12 +1,7 @@
 const api_config = {
   //Development URL
-<<<<<<< HEAD
   BASE_URL: 'http://cottontradecentre.com/development/cotton_bid_v3/api/',
   //BASE_URL: 'http://cottontradecentre.com/development/cotton_bid_v2/api/',
-=======
-  //BASE_URL: 'http://cottontradecentre.com/development/cotton_bid_v1/api/',
-  BASE_URL: 'http://cottontradecentre.com/development/cotton_bid_v2/api/',
->>>>>>> aa124d7c0e21854c5e7f7d77c03afd8b08e603ef
 
   //Production URL
   //BASE_URL: 'http://cottontradecentre.com/cotton_bid/api/',

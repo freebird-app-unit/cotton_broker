@@ -241,10 +241,7 @@ const StampValue = (props) => {
                 <StampValue label='Stamp' value={Props.stamp_image} />
 
                 <MainSection Section='Brokerage Details' />
-        <View style={{ marginTop: hp(2), alignSelf: 'flex-start' }}>
-
-                <Text style={styles.ValueOfLabel}>Last 3 years brokerage in terms of bales</Text>
-                </View>
+        
 
                 {/* <LabelValue label='Header' value='Partnership' /> */}
                 {/* <LabelValue label='Footer' value='Partnership' /> */}
@@ -253,7 +250,10 @@ const StampValue = (props) => {
                 <LabelValue label='Mill reg Date' value='10-10-2019' />
                 <LabelValue label='Reg as' value='MSME' /> */}
                 <LabelValue label='GST Number' value={Props.gst_no || 'Not Provided'} />
+                <View style={{ marginTop: hp(2), alignSelf: 'flex-start' }}>
 
+                    <Text style={styles.ValueOfLabel}>Last 3 years brokerage in terms of bales</Text>
+                </View>
                 <YearValue label='Year' year={[{
                     year: Props.turnover_date_one,
                     turnover: Props.turnover_year_one
@@ -280,13 +280,14 @@ const styles = StyleSheet.create({
     HeaderLAbel: {
         fontSize: hp(2.5),
         color: theme.colors.text,
-        fontFamily: "Poppins-Bold",
-        fontWeight: 'bold'
+        fontFamily: "Poppins-SemiBold",
+
     },
     value: {
         fontSize: hp(2.5),
         color: '#fff',
-        fontFamily: "Poppins-Bold",
+        fontFamily: "Poppins-SemiBold",
+
     },
     VAlue1: {
         fontSize: hp(2),
@@ -297,8 +298,8 @@ const styles = StyleSheet.create({
     ValueOfLabel: {
         fontSize: hp(2),
         color: theme.colors.text,
-        fontFamily: "Poppins-Bold",
-        fontWeight: 'bold',
+        fontFamily: "Poppins-Medium",
+
         lineHeight: hp(3)
     }
 

@@ -272,7 +272,7 @@ const Profile = (item) => {
 
                                 // alignSelf: 'flex-start'
                             }}
-                            labelStyle={{ color: 'red', fontFamily: 'Poppins - Bold', fontWeight: 'bold', textTransform: 'capitalize',fontSize:hp(1.5) }}>
+                            labelStyle={{ color: 'red', fontFamily: 'Poppins-Bold',textTransform: 'capitalize',fontSize:hp(1.4) }}>
                             Reject
                 </Button>
                         <Button
@@ -289,7 +289,7 @@ const Profile = (item) => {
                                 // alignSelf: 'flex-start'
                             }}
                             labelStyle={{ color: '#fff', textTransform: 'capitalize',
-                                fontSize: hp(1.5), fontFamily: 'Poppins - Bold', fontWeight: 'bold', }}>
+                                fontSize: hp(1.4), fontFamily: 'Poppins-Bold', }}>
                             Accept
                 </Button>
                     </View>
@@ -420,22 +420,22 @@ const styles = StyleSheet.create({
     label: {
         fontSize: hp(2),
         color: theme.colors.text,
-        fontWeight: 'bold',
-        fontFamily: 'Poppins - Bold'
+        // fontWeight: 'bold',
+        fontFamily: 'Poppins-Medium'
     },
     Typelabel: {
         fontSize: hp(1.8),
         color: theme.colors.text,
-        fontWeight: 'bold',
-        fontFamily: 'Poppins - Bold'
+        // fontWeight: 'Medium',
+        fontFamily: 'Poppins-Medium'
     },
     balance: {
-        fontSize: hp(2), fontFamily: 'Poppins - Bold',
+        fontSize: hp(2), fontFamily: 'Poppins-Bold',
     },
     time: {
         fontSize: hp(1.9),
         opacity: 0.5,
-        fontFamily: 'Poppins - Regular'
+        fontFamily: 'Poppins-Regular'
     },
     sectionHeader: {
         marginVertical: hp(.5),

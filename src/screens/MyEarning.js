@@ -195,21 +195,21 @@ const renderItem = ({item}) => {
                 <View style={{flexDirection:'row',
                 alignItems :'center',flex:1,borderBottomColor:'lightgray',borderBottomWidth:0.5,paddingVertical:wp(3)}}>
                     <View style={{flexDirection:'column',width:wp(35)}}>
-                        <Text>
+                        <Text style={{fontFamily:'Poppins-Regular',color:'#afafaf',fontSize:hp(2)}}>
                             Date
                         </Text>
-                        <Text>
+                        <Text style={{ fontFamily: 'Poppins-Regular', color: theme.colors.textColor, fontSize: hp(2) }}>
                             {item.date}
                         </Text>
                     </View>
-                    <View style={{flexDirection:'column'}}>
+                    <View style={{flexDirection:'column',marginTop:0.5}}>
                         <Text style={{marginLeft:wp(1),fontSize:hp(2),fontFamily:'Poppins-Bold'}}>
                             Earning
                         </Text>
                         <View style={{flexDirection:'row',alignItems:'center'}}>
-                        <FontAwesome name={'rupee'} size={hp(2)} color={'#333'} />
+                        {/* <FontAwesome name={'rupee'} size={hp(2)} color={'#333'} /> */}
                         <Text style={{marginLeft:wp(1),fontSize:hp(2),fontFamily:'Poppins-Bold'}}>
-                            {item.amount}
+                                ₹ {item.amount}
                         </Text>
                         </View>
                        
@@ -217,7 +217,36 @@ const renderItem = ({item}) => {
                 </View>
             )
 }
+    // const renderItem = ({ item }) => {
+    //     console.log('item', item)
+    //     return (
+    //         <View style={{
+    //             flexDirection: 'row',
+    //             alignItems: 'center', flex: 1, borderBottomColor: 'lightgray', borderBottomWidth: 0.5, paddingVertical: wp(3)
+    //         }}>
+    //             <View style={{ flexDirection: 'column', width: wp(35) }}>
+    //                 <Text style={{ fontFamily: 'Poppins-Regular' }}>
+    //                     Date
+    //                 </Text>
+    //                 <Text>
+    //                     {item.date}
+    //                 </Text>
+    //             </View>
+    //             <View style={{ flexDirection: 'column' }}>
+    //                 <Text style={{ marginLeft: wp(1), fontSize: hp(2), fontFamily: 'Poppins-Bold' }}>
+    //                     Earning
+    //                 </Text>
+    //                 <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+    //                     <FontAwesome name={'rupee'} size={hp(2)} color={'#333'} />
+    //                     <Text style={{ marginLeft: wp(1), fontSize: hp(2), fontFamily: 'Poppins-Bold' }}>
+    //                         {item.amount}
+    //                     </Text>
+    //                 </View>
 
+    //             </View>
+    //         </View>
+    //     )
+    // }
     const [refreshing, serRefresh] = useState(false)
 
     const _onRefresh = () => {
@@ -232,9 +261,13 @@ const renderItem = ({item}) => {
             <Spinner visible={spinner} color="#085cab" />
             <View style={{ flexShrink: 1, backgroundColor: 'white', 
              flexDirection: 'column', paddingHorizontal: wp(5) }}>
-                {(EarningData.hasOwnProperty('earning') && EarningData.earning.length > 0 )? (<FlatList
+               
+                {(EarningData.hasOwnProperty('earning') && EarningData.earning.length > 0 )? (
+                <FlatList
                  style={{minHeight:hp(75)}}
-                        data={EarningData.earning}
+                        // data={EarningData.earning}
+                        data={[1,2]}
+
                  renderItem={renderItem}
                     refreshControl={
                         <RefreshControl
@@ -242,7 +275,8 @@ const renderItem = ({item}) => {
                             onRefresh={_onRefresh}
                         />
                     }
-                 />) : (
+                 />
+                 ) : (
                         <View
                             style={{
                                 height: '90%',
@@ -254,7 +288,7 @@ const renderItem = ({item}) => {
                                 // marginTop: '40%'
                             }}>
                             <NoRecordsFound_Icon />
-                            <Text style={styles.norecords}>Sorry, no records available</Text>
+                            <Text style={{fontSize:14,fontFamily:'Poppins-Regular'}}>Sorry, no records available</Text>
                         </View>
                  )}
                   <View style={{flexDirection:'column',alignSelf:'flex-end',alignContent:'flex-end'}}>

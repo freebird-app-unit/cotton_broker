@@ -331,12 +331,14 @@ import LineGreen from '../assets/LineWithCircleGreen';
 // import IC_LD from '../assets/location_details.jpeg';
 // import IC_CD from '../assets/company_details.jpeg';
 // import IC_BD from '../assets/bank_details.jpeg';
+import SearchableDropdown from './SelectSearchBox';
 
 const UpdateScreen = ({ navigation, ref, route }) => {
 
     const data = route.params.data;
     console.log('ref', data)
 
+    const [itemsStatesearch,setit] = useState([{id:0,name:'wezz'}]);
     const [sellerNameFocus, setSellerNameFocus] = useState(false);
     const [loading, setLoading] = useState(false);
     const [hidePass, setHidePass] = useState(true);
@@ -577,6 +579,7 @@ const UpdateScreen = ({ navigation, ref, route }) => {
                 let stateListData = response.data.data;
                 let d = []
 
+                setit(response.data.data)
                 for (let i = 0; i < stateListData.length; i++) {
                     d.push({
                         label: stateListData[i].name, value: stateListData[i].id
@@ -1335,6 +1338,54 @@ const UpdateScreen = ({ navigation, ref, route }) => {
                                     }}>
                                     State
                                 </Text>
+                                <SearchableDropdown
+                                    onItemSelect={(item) => {
+                                        console.log('item',item)
+                                        // const items = this.state.selectedItems;
+                                        // items.push(item)
+                                        // this.setState({ selectedItems: items });
+                                        setValueState(item.name)
+                                    }}
+                                    value={valueState}
+                                    containerStyle={{ padding: 5 }}
+                                    onRemoveItem={(item, index) => {
+                                        // const items = this.state.selectedItems.filter((sitem) => sitem.id !== item.id);
+                                        // this.setState({ selectedItems: items });
+                                    }}
+                                    itemStyle={{
+                                        padding: 10,
+                                        marginTop: 2,
+                                        backgroundColor: '#ddd',
+                                        borderColor: '#bbb',
+                                        borderWidth: 1,
+                                        borderRadius: 5,
+                                    }}
+                                    itemTextStyle={{ color: '#222' }}
+                                    itemsContainerStyle={{ maxHeight: 140 }}
+                                    items={itemsStatesearch}
+                                    // defaultIndex={0}
+                                    // resetValue={false}
+                                    textInputProps={
+                                        {
+                                            // placeholder: "hi",
+                                            underlineColorAndroid: "transparent",
+                                            value : {valueState},
+                                            style: {
+                                                padding: 12,
+                                                width:wp(94),
+                                                borderWidth: 1,
+                                                borderColor: '#ccc',
+                                                borderRadius: 5,
+                                            },
+                                            onTextChange: text => {}
+                                        }
+                                    }
+                                    listProps={
+                                        {
+                                            nestedScrollEnabled: true,
+                                        }
+                                    }
+                                />
                                 <SelectDropdown
                                     data={itemsState}
                                     onSelect={(selectedItem, index) => {
