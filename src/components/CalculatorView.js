@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-    StyleSheet, View, Text, ScrollView,TouchableOpacity,
+    StyleSheet, View, Text, ScrollView, TouchableOpacity,
 } from 'react-native';
 import { theme } from '../core/theme';
 import Iconicons from 'react-native-vector-icons/Ionicons';
@@ -11,44 +11,109 @@ import {
 } from '../components/responsive-ratio';
 import TextInput from '../components/TextInput';
 
- function SecondRoute () {
-     const [Yarn_Count, onChangedYarn_Count] = useState('')
-     const [Cotton_Rate, onChangedCotton_Rate] = useState('')
-     const [Cotton_Ratekg, onChangedCotton_Ratekg] = useState('')
-     const [Yield, onChangedYield] = useState('')
-     const [Waste_Recovery, onChangedWaste_Recovery] = useState('')
-     const [Material_Cost, onChangedMaterial_Cost] = useState('')
-     const [Conversion_Cost, onChangedConversion_Cost] = useState('')
-     const [Commission, onChangedCommission] = useState('')
-     const [Other_Exp, onChangedOther_Exp] = useState('')
+function SecondRoute() {
+    const [Yarn_Count, setYarnCount] = useState(0.0)
+    const [Cotton_Rate, setCottonRate] = useState(0.0)
+    const [Auto_Cotton_Ratekg, setCottonRateKg] = useState(0.0)
+    const [Yield, setYield] = useState(0.0)
+    const [Waste_Recovery, setWasteRecovery] = useState(0.0)
+    const [Conversion_Cost, setCoversionCost] = useState(0.0)
+    const [Result, setResult] = useState(0.0)
+    const [ideaofCotton, setIdeaofCotton] = useState(0)
 
-     
+    const onChangedYarn_Count = (text) => {
+        setYarnCount(text)
+        displayResult(text, Auto_Cotton_Ratekg, Yield, Waste_Recovery, Conversion_Cost)
+    }
+
+    const onChangedCotton_Rate = (text) => {
+        setCottonRate(text)
+        let t1 = parseFloat(text) / 355.6
+        t1 = t1.toFixed(2)
+        if (!isNaN(t1)) {
+            setCottonRateKg(t1)
+        }
+
+        displayResult(Yarn_Count, t1, Yield, Waste_Recovery, Conversion_Cost)
+    }
+
+    const onChangedYield = (text) => {
+        setYield(text)
+        displayResult(Yarn_Count, Auto_Cotton_Ratekg, text, Waste_Recovery, Conversion_Cost)
+    }
+
+    const onChangedWaste_Recovery = (text) => {
+        setWasteRecovery(text)
+        displayResult(Yarn_Count, Auto_Cotton_Ratekg, Yield, text, Conversion_Cost)
+    }
+
+    const onChangedConversion_Cost = (text) => {
+        setCoversionCost(text)
+        displayResult(Yarn_Count, Auto_Cotton_Ratekg, Yield, Waste_Recovery, text)
+    }
+
+    const countingFunc = () => {
+        console.log('hi')
+        let i = 100 - Yield;
+        console.log('i', i)
+        let b = (Auto_Cotton_Ratekg * i) / 100
+        console.log('b', b)
+
+        let ans = parseFloat(Auto_Cotton_Ratekg) + parseFloat(b)
+        console.log('ans', ans)
+
+        //  setIdeaofCotton(ans);
+
+        //  let  i = ideaofCotton
+        let ansg = Waste_Recovery != 0.0 ? ans - parseInt(Waste_Recovery) : ans
+        let bg = Conversion_Cost != 0.0 ? ansg + parseInt(Conversion_Cost) : ansg
+
+        setIdeaofCotton(bg);
+
+        console.log('bg', bg)
+    }
+
+
+    const displayResult = (yarnCount, autoCottonRate, yieldVal, wasteRecovery, conversionCost) => {
+        let actualCost = parseFloat(autoCottonRate) * parseFloat(yieldVal) / 100;
+        let yarnValue = parseFloat(yarnCount) * parseFloat(conversionCost)
+        let t1 = parseFloat(wasteRecovery) + parseFloat(yarnValue)
+        let result = parseFloat(actualCost) - parseFloat(t1)
+        result = Math.abs(result)
+
+        console.log("result: " + result)
+        if (isNaN(result)) {
+            setResult("Invalid")
+        } else {
+            setResult(result.toFixed(2))
+        }
+    }
 
     return (
         <ScrollView style={{ flex: 1, backgroundColor: '#fff', paddingHorizontal: wp(2) }}>
-            <InPutText label='Yarn Count' labelValue='' outlineColor={'#d1d1d1'} onChangeText={onChangedYarn_Count} />
-            <InPutText label='Cotton Rate' labelValue='Rs/ Candy' outlineColor={'#d1d1d1'} onChangeText={onChangedCotton_Rate} />
-            <InPutText label='Cotton Rate' labelValue='Rs/kg' outlineColor={'#d1d1d1'} onChangeText={onChangedCotton_Ratekg} />
+            <InPutText label='Yarn Count' keyboardType="phone-pad" labelValue='' outlineColor={'#eee'} onChangeText={onChangedYarn_Count} maxLength={6} />
+            <InPutText label='Cotton Rate' keyboardType="phone-pad" labelValue='Rs/ Candy' outlineColor={'#eee'} onChangeText={onChangedCotton_Rate} maxLength={6} />
+            <InPutText label='Cotton Rate' keyboardType="phone-pad" labelValue='Rs/kg' outlineColor={'#eee'} value={Auto_Cotton_Ratekg} maxLength={6} editable={false} />
 
-            <InPutText label='Yield' labelValue='%' outlineColor={'#d1d1d1'} onChangeText={onChangedYield}  />
-            <InPutText label='Waste Recovery' labelValue='Rs/kg' outlineColor={'#d1d1d1'} onChangeText={onChangedWaste_Recovery} />
-            <InPutText label='Material Cost' labelValue='Rs/kg' outlineColor={'#d1d1d1'} onChangeText={onChangedMaterial_Cost} />
-            <InPutText label='Conversion Cost' labelValue='Rs/k/Count' outlineColor={'#d1d1d1'} onChangeText={onChangedConversion_Cost} />
-            <InPutText label='Commission' labelValue='%' outlineColor={'#d1d1d1'} onChangeText={onChangedCommission} />
-            <InPutText label='Other Exp' labelValue='Rs/kg' outlineColor={'#d1d1d1'} onChangeText={onChangedOther_Exp} />
-        <View style={{
-            flexDirection: 'row',
-            alignItems: 'center', marginTop: hp(1)
-        }}>
-            <View style={{ width: wp(40), }}><Text style={styles.label}>Yarn Cost</Text></View>
-            <View style={{ alignItems: 'flex-start', flexDirection: 'row', alignItems: 'center' }}>
-                <Text style={styles.value}>26.6</Text>
-                <Text style={styles.VAlue1}>Rs/kg</Text>
+            <InPutText label='Yield' onBlur={countingFunc} keyboardType="phone-pad" labelValue='%' outlineColor={'#eee'} onChangeText={onChangedYield} maxLength={6} />
+            <InPutText label='Waste Recovery' onBlur={countingFunc} keyboardType="phone-pad" labelValue='Rs/kg' outlineColor={'#eee'} onChangeText={onChangedWaste_Recovery} maxLength={6} />
+            {/* <InPutText label='Material Cost' labelValue='Rs/kg' outlineColor={'#eee'} onChangeText={onChangedMaterial_Cost} /> */}
+            <InPutText label='Conversion Cost' onBlur={countingFunc} keyboardType="phone-pad" labelValue='Rs/k/Count' outlineColor={'#eee'} onChangeText={onChangedConversion_Cost} maxLength={6} />
+            {/* <InPutText label='Commission' labelValue='%' outlineColor={'#eee'} onChangeText={onChangedCommission} />
+            <InPutText label='Other Exp' labelValue='Rs/kg' outlineColor={'#eee'} onChangeText={onChangedOther_Exp} /> */}
+            <View style={{
+                flexDirection: 'row',
+                alignItems: 'center', marginTop: hp(1)
+            }}>
+                <View style={{ width: wp(40), }}><Text style={styles.label}>Yarn Cost</Text></View>
+                <View style={{ alignItems: 'flex-start', flexDirection: 'row', alignItems: 'center' }}>
+                    <Text style={styles.value}>{Result}</Text>
+                    <Text style={styles.VAlue1}>Rs/kg</Text>
+                </View>
             </View>
-        </View>
-        <InPutText label='Yarn Rate' labelValue='Rs/kg' outlineColor={'#d1d1d1'} />
-        <InPutText label='Profit' labelValue='Rs/kg' outlineColor={'#d1d1d1'} />
-        <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+            {/* <InPutText label='Yarn Rate' labelValue='Rs/kg' outlineColor={'#eee'} />
+        <InPutText label='Profit' labelValue='Rs/kg' outlineColor={'#eee'} /> */}
+            {/* <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
             <Button mode="contained"
                 onPress={onPressed}
                 style={{ width: wp(74) }}
@@ -66,83 +131,158 @@ import TextInput from '../components/TextInput';
                 }}>
                 <Iconicons name='share-social-outline' size={hp(2.5)} color='white' />
             </TouchableOpacity>
-        </View>
+        </View> */}
 
-    </ScrollView>
+        </ScrollView>
 
-)}
+    )
+}
 
- function FirstRoute () {
-    const [kapas, onChangedKapas] = useState('')
-     const [Expenses, onChangedExpenses] = useState('')
-     const [Cotton_Seed, onChangedCotton_Seed] = useState('')
-     const [Our_Turn, onChangedOur_Turn] = useState('')
-     const [Shortage, onChangedShortage] = useState('')
-
-
-
-    return (
-    <View style={{ flex: 1,backgroundColor:'#fff',paddingHorizontal:wp(2) }}>
-            <InPutText label='Kapas' labelValue='Rs/ 20 kg' outlineColor={'#d1d1d1'} onChangeText={onChangedKapas}  />
-            <InPutText label='Expenses' labelValue='Rs/ 20 kg' outlineColor={'#d1d1d1'} onChangeText={onChangedExpenses}/>
-            <InPutText label='Cotton Seed' labelValue='Rs/ 20 kg' outlineColor={'#d1d1d1'} onChangeText={onChangedCotton_Seed}/>
-            <InPutText label='Our Turn' labelValue='%' outlineColor={'#d1d1d1'} onChangeText={onChangedOur_Turn}/>
-            <InPutText label='Shortage' labelValue='%' outlineColor={'#d1d1d1'} onChangeText={onChangedShortage}/>
-        <View style={{
-            flexDirection: 'row',
-            alignItems: 'center', marginTop: hp(1)
-        }}>
-            <View style={{ width: wp(40), }}><Text style={styles.label}>Cost Of Cotton</Text></View>
-            <View style={{ alignItems: 'flex-start', flexDirection: 'row', alignItems: 'center' }}>
-                <Text style={styles.value}>26.6</Text>
-                <Text style={styles.VAlue1}>Rs/Candy</Text>
-            </View>
-        </View>
-    </View>
+function FirstRoute() {
+    const [kapas, setKapasValue] = useState(0.0)
+    const [Expenses, setExpense] = useState(0.0)
+    const [Cotton_Seed, setCottoSeed] = useState(0.0)
+    const [Our_Turn, setOutTurn] = useState(0.0)
+    const [Shortage, setShortage] = useState(0.0)
+    const [Result, setResult] = useState(0.0)
 
 
-
-)}
- function ThirdRoute()
-{
-     const [Cotton_Rate, onChangedCotton_Rate] = useState('')
-     const [Expenses, onChangedExpenses] = useState('')
-     const [Exchange_Rate, onChangedExchange_Rate] = useState('')
-     
-
-
-    return (
-        <View style={{ flex: 1, backgroundColor: '#fff', paddingHorizontal: wp(2)}}>
-
-            <InPutText label='Cotton Rate' labelValue='Rs/Candy' outlineColor={'#d1d1d1'} onChangeText={onChangedCotton_Rate} />
-            <InPutText label='Expenses' labelValue='Rs/Candy' outlineColor={'#d1d1d1'} onChangeText={onChangedExpenses}/>
-            <InPutText label='Exchange Rate' labelValue='USD/INR' outlineColor={'#d1d1d1'} onChangeText={onChangedExchange_Rate}/>
-        <View style={{
-            flexDirection: 'row',
-            alignItems: 'center', marginTop: hp(2)
-        }}>
-            <View style={{ width: wp(40), }}><Text style={styles.label}>Export Rate</Text></View>
-            <View style={{ alignItems: 'flex-start', flexDirection: 'row', alignItems: 'center' }}>
-                <Text style={styles.value}>26.6</Text>
-                <Text style={styles.VAlue1}>Cents/Bales</Text>
-            </View>
-        </View>
-        <View style={{
-            flexDirection: 'row',
-            alignItems: 'center', marginTop: hp(1)
-        }}>
-            <View style={{ width: wp(40), }}><Text style={styles.label}>Export Rate</Text></View>
-            <View style={{ alignItems: 'flex-start', flexDirection: 'row', alignItems: 'center' }}>
-                <Text style={styles.value}>26.6</Text>
-                <Text style={styles.VAlue1}>USD/kg</Text>
-            </View>
-        </View>
-    </View>
-
-
-
-);
+    const onChangedKapas = (text) => {
+        setKapasValue(text)
+        displayResult(text, Expenses, Cotton_Seed, Our_Turn, Shortage)
     }
+
+    const onChangedExpense = (text) => {
+        setExpense(text)
+        displayResult(kapas, text, Cotton_Seed, Our_Turn, Shortage)
+    }
+
+    const onChangedCotton_Seed = (text) => {
+        setCottoSeed(text)
+        displayResult(kapas, Expenses, text, Our_Turn, Shortage)
+    }
+
+    const onChangedOut_Turn = (text) => {
+        setOutTurn(text)
+        displayResult(kapas, Expenses, Cotton_Seed, text, Shortage)
+    }
+
+    const onChangedShortage = (text) => {
+        setShortage(text)
+        displayResult(kapas, Expenses, Cotton_Seed, Our_Turn, text)
+    }
+
+    const displayResult = (kapas, expenses, cottonSeed, outTurn, shortage) => {
+        let t1 = parseFloat(cottonSeed) * (100 - (parseFloat(outTurn) + parseFloat(shortage)))
+        let t2 = (parseFloat(kapas) + parseFloat(expenses)) * 100
+        let t3 = parseFloat(t1) - parseFloat(t2)
+        t3 = Math.abs(t3)
+        let t4 = parseFloat(t3) * 355.60
+        let t5 = 20 * parseFloat(outTurn)
+
+        let result = parseFloat(t4) / t5;
+
+        if (isNaN(result)) {
+            setResult("Invalid")
+        } else {
+            setResult(Math.round(result))
+        }
+    }
+
+    return (
+        <View style={{ flex: 1, backgroundColor: '#fff', paddingHorizontal: wp(2) }}>
+            <InPutText label='Kapas' keyboardType="phone-pad" labelValue='Rs/ 20 kg' outlineColor={'#eee'} onChangeText={text => onChangedKapas(text)} maxLength={6} />
+            <InPutText label='Expenses' keyboardType="phone-pad" labelValue='Rs/ 20 kg' outlineColor={'#eee'} onChangeText={text => onChangedExpense(text)} maxLength={6} />
+            <InPutText label='Cotton Seed' keyboardType="phone-pad" labelValue='Rs/ 20 kg' outlineColor={'#eee'} onChangeText={text => onChangedCotton_Seed(text)} maxLength={6} />
+            <InPutText label='Our Turn' keyboardType="phone-pad" labelValue='%' outlineColor={'#eee'} onChangeText={text => onChangedOut_Turn(text)} maxLength={6} />
+            <InPutText label='Shortage' keyboardType="phone-pad" labelValue='%' outlineColor={'#eee'} onChangeText={text => onChangedShortage(text)} maxLength={6} />
+            <View style={{
+                flexDirection: 'row',
+                alignItems: 'center', marginTop: hp(1)
+            }}>
+                <View style={{ width: wp(40), }}><Text style={styles.label}>Cost Of Cotton</Text></View>
+                <View style={{ alignItems: 'flex-start', flexDirection: 'row', alignItems: 'center' }}>
+                    <Text style={styles.value}>{Result}</Text>
+                    <Text style={styles.VAlue1}>Rs/Candy</Text>
+                </View>
+            </View>
+        </View>
+
+
+
+    )
+}
+function ThirdRoute() {
+    const [Cotton_Rate, setCottonRate] = useState(0.0)
+    const [Expenses, setExpense] = useState(0.0)
+    const [Exchange_Rate, setExchangeRate] = useState(0.0)
+    const [Result, setResult] = useState(0.0)
+
+
+    const onChangedCotton_Rate = (text) => {
+        setCottonRate(text)
+        displayResult(text, Expenses, Exchange_Rate)
+    }
+
+    const onChangedExpenses = (text) => {
+        setExpense(text)
+        displayResult(Cotton_Rate, text, Exchange_Rate)
+    }
+
+    const onChangedExchange_Rate = (text) => {
+        setExchangeRate(text)
+        displayResult(Cotton_Rate, Expenses, text)
+    }
+
+    const displayResult = (cottonRate, expenses, exchangeRate) => {
+        let t1 = parseFloat(cottonRate) + parseFloat(expenses)
+        let t2 = t1 * 100
+        let t3 = 355.60 * parseFloat(exchangeRate)
+        let t4 = t3 * 2.205
+
+
+
+        let result = t2 / t4;
+
+        if (isNaN(result)) {
+            setResult("Invalid")
+        } else {
+            setResult(result.toFixed(2))
+        }
+    }
+
+    return (
+        <View style={{ flex: 1, backgroundColor: '#fff', paddingHorizontal: wp(2) }}>
+
+            <InPutText label='Cotton Rate' keyboardType="phone-pad" labelValue='Rs/Candy' outlineColor={'#eee'} onChangeText={text => onChangedCotton_Rate(text)} maxLength={6} />
+            <InPutText label='Expenses' keyboardType="phone-pad" labelValue='Rs/Candy' outlineColor={'#eee'} onChangeText={text => onChangedExpenses(text)} maxLength={6} />
+            <InPutText label='Exchange Rate' keyboardType="phone-pad" labelValue='USD/INR' outlineColor={'#eee'} onChangeText={text => onChangedExchange_Rate(text)} maxLength={6} />
+            <View style={{
+                flexDirection: 'row',
+                alignItems: 'center', marginTop: hp(2)
+            }}>
+                <View style={{ width: wp(40), }}><Text style={styles.label}>Export Rate</Text></View>
+                <View style={{ alignItems: 'flex-start', flexDirection: 'row', alignItems: 'center' }}>
+                    <Text style={styles.value}>{Result}</Text>
+                    <Text style={styles.VAlue1}>Cents/Bales</Text>
+                </View>
+            </View>
+            <View style={{
+                flexDirection: 'row',
+                alignItems: 'center', marginTop: hp(1)
+            }}>
+                {/* <View style={{ width: wp(40), }}><Text style={styles.label}>Export Rate</Text></View>
+            <View style={{ alignItems: 'flex-start', flexDirection: 'row', alignItems: 'center' }}>
+                <Text style={styles.value}>{Result}</Text>
+                <Text style={styles.VAlue1}>USD/kg</Text>
+            </View> */}
+            </View>
+        </View>
+
+
+
+    );
+}
 
 const InPutText = (props) => {
     console.log('hello')
@@ -159,6 +299,7 @@ const InPutText = (props) => {
             <View style={{ width: wp(43), marginVertical: -4 }}><TextInput
                 returnKeyType="next"
                 // require={true}
+
                 maxLength={50}
                 onChangeText={props.onChangeText}
                 {...props}
@@ -166,7 +307,7 @@ const InPutText = (props) => {
             <View style={{ width: wp(18), alignItems: 'flex-start', justifyContent: 'center', paddingTop: hp(1.5) }}>
                 <Text style={{
                     fontSize: hp(1.7),
-                    color: theme.colors.text,
+                    color: '#555555',
                     opacity: 0.5,
                     fontFamily: "Poppins-Regular",
                     width: wp(18)
@@ -176,11 +317,11 @@ const InPutText = (props) => {
     )
 }
 
-export{FirstRoute,SecondRoute,ThirdRoute,InPutText}
+export { FirstRoute, SecondRoute, ThirdRoute, InPutText }
 
-    const onPressed = () => {
-        console.log('reset')
-    }
+const onPressed = () => {
+    console.log('reset')
+}
 
 const styles = StyleSheet.create({
     label: {

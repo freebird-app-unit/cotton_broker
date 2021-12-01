@@ -1,14 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
-            "outputFile": "/Users/empiere-mac/ReactNativeProjects/washim/Bhavik/broker_github/cotton_broker/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-small-v4/values-small-v4.xml",
-=======
             "outputFile": "D:\\Github_Projects\\cotton_broker\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
->>>>>>> aa124d7c0e21854c5e7f7d77c03afd8b08e603ef
             "map": [
                 {
-                    "source": "/Users/empiere-mac/.gradle/caches/transforms-2/files-2.1/b2b7e91e1d6a21c39076c0228ed0575f/material-1.1.0/res/values-small-v4/values-small-v4.xml",
+                    "source": "C:\\Users\\hp\\.gradle\\caches\\transforms-2\\files-2.1\\b2b7e91e1d6a21c39076c0228ed0575f\\material-1.1.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

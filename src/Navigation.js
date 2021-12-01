@@ -24,13 +24,16 @@ import {
     NotificationSelectSeller,
     MyPostDetails,
     MyContractFilter,
-    MyContractDetails, RequestScreen, MyContract, HomeScreen, MyClients, MenuScreen,MyEarning
+    MyContractDetails, RequestScreen, MyContract, HomeScreen, MyClients, MenuScreen, MyEarning, NewsFeedView
 } from './screens'
 import firebase from '@react-native-firebase/app';
 import EditProfile from './components/EditProfile'
 import ProfileSeen from './components/ProfileSeen'
 import Profile from './components/Profile'
 import MCXScreen from './components/MCXScreen'
+import NewsSingle from './components/NewsSingle'
+// import { FirstRoute, SecondRoute, ThirdRoute } from './components/CalculatorView'
+
 
 
 
@@ -235,6 +238,13 @@ const Request = ({ navigation, route }) => {
         </View>
     )
 }
+const NewsFeedViewFunction = ({ navigation }) => <View style={{ flex: 1, backgroundColor: '#333' }}>
+    <AppHeading title={'News Feed'} menu leftPress={() => navigation.navigate('MenuScreen')} />
+    <View
+        style={styles.flex}>
+        <NewsFeedView navigation={navigation} />
+    </View>
+</View>
 const ChangePasswordFunction = ({ navigation, route }) => {
     return (
         <View style={{ flex: 1, backgroundColor: '#333' }}>
@@ -292,22 +302,22 @@ const ProfileSeenFunction = ({ navigation, route }) => {
 }
 
 const tabnavi = ({ navigation }) => {
-    console.log('nabvi', navigation)
+    // console.log('nabvi', navigation)
     return (
-        <View style={{ flex: 1, backgroundColor: '#343434', }}>
+        <View style={{ flex: 1, backgroundColor: '#333', }}>
             <View style={{
                 flexDirection: 'row', paddingHorizontal: wp(5),
-                marginTop: hp(2), height: hp(5), alignItems: 'center', justifyContent: 'space-between'
+                marginTop: hp(4), height: hp(9), alignItems: 'center', justifyContent: 'space-between'
             }}>
                 <Ionicons name='chevron-back-outline' size={hp(3)} color='#fff' style={{ width: wp(30) }} onPress={() => navigation.goBack()} />
-                <Text style={{ alignSelf: 'center', color: '#fff', fontSize: hp(3), fontFamily: 'Poppins - Regular' }}>Calculator</Text>
+                <Text style={{ alignSelf: 'center', color: '#fff', fontSize:20, fontFamily: 'Poppins-SemiBold' }}>Calculator</Text>
                 <View style={{ width: wp(30) }} />
 
             </View>
             <View style={{
                 flex: 1,
                 width: '100%',
-                height: hp(86),
+                // height: hp(86),
                 paddingBottom: 30,
                 paddingTop: hp(3),
                 marginTop: hp(2),
@@ -316,10 +326,10 @@ const tabnavi = ({ navigation }) => {
                 borderTopRightRadius: 20,
             }}>
                 <Tab.Navigator tabBarOptions={{
-                    labelStyle: { fontSize: hp(2), fontFamily: 'Poppins - Regular' },
+                    labelStyle: { fontSize: hp(2), fontFamily: 'Poppins-SemiBold', textTransform: 'none' },
                     activeTintColor: theme.colors.primary,
                     inactiveTintColor: '#afafaf',
-                    indicatorStyle: { backgroundColor: theme.colors.primary }
+                    indicatorStyle: { backgroundColor: theme.colors.primary },
                 }}>
                     <Tab.Screen name="Ginning" component={FirstRoute} />
                     <Tab.Screen name="Spinning" component={SecondRoute} />
@@ -329,6 +339,7 @@ const tabnavi = ({ navigation }) => {
         </View>
     );
 }
+
 const App = () => {
 
     const credentials = {
@@ -423,6 +434,10 @@ const App = () => {
                     <Stack.Screen name="MenuScreen" component={MenuScreen} />
                     <Stack.Screen name="MyEarning" component={MyEarningFunction} />
                     <Stack.Screen name="McxScreen" component={mcxScreenFunction} />
+                    <Stack.Screen name="NewsSingle" component={NewsSingle} />
+                    <Stack.Screen name="NewsFeed" component={NewsFeedViewFunction} />
+
+
 
                     
 

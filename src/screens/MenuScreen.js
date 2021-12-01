@@ -120,6 +120,16 @@ const Data = [
         Icon: <Profile_Icon />
     },
     {
+        label: 'NewsFeed',
+        Title: 'News Feed',
+        Icon: <Newsfeed_Icon />
+    },
+    {
+        label: 'Calculator',
+        Title: 'Calculator',
+        Icon: <Calculator_Icon />
+    },
+    {
         label: 'ChangePasswordScreen',
         Title: 'Change Password',
         Icon: <ChangePassword_Icon />
@@ -268,7 +278,7 @@ export default class Dashboard extends Component {
                                     mode="text"
                                     uppercase={false}
                                     color={theme.colors.blackBG}
-                                    labelStyle={{ fontFamily: 'Poppins-Regular' }}>
+                                    labelStyle={{ fontFamily: 'Poppins-SemiBold' }}>
                                     Share App
                                 </Button>
                             </View>
@@ -286,7 +296,7 @@ export default class Dashboard extends Component {
                                     mode="text"
                                     uppercase={false}
                                     color={theme.colors.blackBG}
-                                    labelStyle={{ fontWeight: 'normal' }}>
+                                    labelStyle={{ fontFamily:'Poppins-SemiBold' }}>
                                     Logout
                                 </Button>
                             </View>

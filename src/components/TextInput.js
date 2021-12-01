@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
   input: {
     backgroundColor: theme.colors.surface,
     width: '90%',
-    height: hp(6.5),
+    height: hp(6),
     justifyContent: 'center',
     fontFamily: "Poppins-Regular",
     fontSize: hp(2.1)

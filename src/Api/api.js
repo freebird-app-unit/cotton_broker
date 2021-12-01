@@ -50,7 +50,9 @@ const api_config = {
   BROKER_EARNING : 'broker_earning',
   RESEND_DEAL_OTP:'resend_deal_otp',
   LOGOUT_BROKER:'logout_broker',
-  GET_MCX_DATA: "get_mcx_data"
+  GET_MCX_DATA: "get_mcx_data",
+  NEWS: 'news',
+
 
 
 
