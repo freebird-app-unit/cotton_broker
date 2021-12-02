@@ -115,7 +115,7 @@ const App = () => {
     socket.on('connect', () => console.log('connected socket', socket.id))
 
     //yes proper che reload karo pachi app server bandh hatu aayathi baroba
-    socket.onAny(event => console.log('got,', event))
+    // socket.onAny(event => console.log('got,', event))
     console.log('await EncryptedStorage.getItem(user_id)', await EncryptedStorage.getItem('user_id'))
 
     // socket.on("NotificationToSeller6", (content) => {

@@ -19,6 +19,8 @@ export { default as MyClients } from './MyClients'
 export { default as MenuScreen } from './MenuScreen'
 export { default as MyEarning } from './MyEarning'
 export { default as NewsFeedView } from '../components/NewsFeedView'
+export { default as ReportScreen } from './ReportScreen'
+
 
 
 

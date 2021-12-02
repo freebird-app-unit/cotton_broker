@@ -24,6 +24,7 @@ import {
     NotificationSelectSeller,
     MyPostDetails,
     MyContractFilter,
+    ReportScreen,
     MyContractDetails, RequestScreen, MyContract, HomeScreen, MyClients, MenuScreen, MyEarning, NewsFeedView
 } from './screens'
 import firebase from '@react-native-firebase/app';
@@ -153,6 +154,19 @@ const mcxScreenFunction = ({ navigation, route }) => {
             <View
                 style={styles.flex}>
                 <MCXScreen navigation={navigation} route={route} />
+            </View>
+        </View>
+    )
+}
+
+const ReportScreenFunction = ({ navigation, route }) => {
+    // console.log('navigation>', navigation)
+    return (
+        <View style={{ flex: 1, backgroundColor: '#343434' }}>
+            <AppHeading title={'Report'} menu leftPress={() => navigation.navigate('MenuScreen')} />
+            <View
+                style={styles.flex}>
+                <ReportScreen navigation={navigation} route={route} />
             </View>
         </View>
     )
@@ -436,7 +450,9 @@ const App = () => {
                     <Stack.Screen name="McxScreen" component={mcxScreenFunction} />
                     <Stack.Screen name="NewsSingle" component={NewsSingle} />
                     <Stack.Screen name="NewsFeed" component={NewsFeedViewFunction} />
-
+                    <Stack.Screen name="ReportScreen" component={ReportScreenFunction} />
+                    
+                    
 
 
                     

@@ -94,7 +94,7 @@ const Data = [
         Icon: <Home />
     },
     {
-        label: 'HomeScreen',
+        label: 'ReportScreen',
         Title: 'Reports',
         Icon: <Reports_Icon />
     },
