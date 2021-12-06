@@ -1,4 +1,4 @@
-rootProject.name = 'CottonBidSeller'
+rootProject.name = 'CottonBidBroker'
 include ':react-native-otp-verify'
 project(':react-native-otp-verify').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-otp-verify/android')
 include ':react-native-vector-icons'

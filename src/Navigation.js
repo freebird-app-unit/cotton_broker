@@ -58,7 +58,7 @@ const AppHeading = (props) => {
             <Appbar.Header style={{ backgroundColor: 'transparent' }}>
                 {props.menu ? <Appbar.Action
                     icon="menu"
-                    color= {props.color ? props.color : "white"}
+                    color={props.color ? props.color : "white"}
                     onPress={props.leftPress}
                 /> :
                     <Appbar.Action
@@ -173,7 +173,7 @@ const ReportScreenFunction = ({ navigation, route }) => {
 }
 
 const MyContractFilterFunction = ({ navigation, route }) => <View style={{ flex: 1, backgroundColor: '#fff' }}>
-    <AppHeading title={'Filter'} color = {'black'} leftPress={() => navigation.goBack()} />
+    <AppHeading title={'Filter'} color={'black'} leftPress={() => navigation.goBack()} />
     <View
         style={styles.flex}>
         <MyContractFilter navigation={navigation} route={route} />
@@ -184,7 +184,7 @@ const MyClientsFunction = ({ navigation, route }) => {
     // console.log('navigation>??', route)
     return (
         <View style={{ flex: 1, backgroundColor: '#343434' }}>
-            <AppHeading title={'My Clients'} menu  leftPress={() => navigation.navigate('MenuScreen')} rightPress={() =>
+            <AppHeading title={'My Clients'} menu leftPress={() => navigation.navigate('MenuScreen')} rightPress={() =>
                 navigation.navigate('MyContractFilter', { productList: route.params.productList })} />
             <View
                 style={styles.flex}>
@@ -324,7 +324,7 @@ const tabnavi = ({ navigation }) => {
                 marginTop: hp(4), height: hp(9), alignItems: 'center', justifyContent: 'space-between'
             }}>
                 <Ionicons name='chevron-back-outline' size={hp(3)} color='#fff' style={{ width: wp(30) }} onPress={() => navigation.goBack()} />
-                <Text style={{ alignSelf: 'center', color: '#fff', fontSize:20, fontFamily: 'Poppins-SemiBold' }}>Calculator</Text>
+                <Text style={{ alignSelf: 'center', color: '#fff', fontSize: 20, fontFamily: 'Poppins-SemiBold' }}>Calculator</Text>
                 <View style={{ width: wp(30) }} />
 
             </View>
@@ -451,11 +451,11 @@ const App = () => {
                     <Stack.Screen name="NewsSingle" component={NewsSingle} />
                     <Stack.Screen name="NewsFeed" component={NewsFeedViewFunction} />
                     <Stack.Screen name="ReportScreen" component={ReportScreenFunction} />
-                    
-                    
 
 
-                    
+
+
+
 
 
 

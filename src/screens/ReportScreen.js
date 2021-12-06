@@ -54,7 +54,7 @@ const TouchableFunction = ({ ...props }) => {
                     height: 35,
                     textAlign: 'center',
                     textAlignVertical: 'center',
-                    paddingTop:3
+                    paddingTop: 3
                 }}>{props.title}</Text></TouchableOpacity>
     )
 
@@ -291,7 +291,7 @@ function Contract({ navigation }) {
                         for (let i = 0; i < productList.length; i++) {
 
                             arrProductList.push({
-                                label: productList[i].name + '-' + productList[i].type ,
+                                label: productList[i].name + '-' + productList[i].type,
                                 value: productList[i].id,
                             });
                         }
@@ -368,7 +368,7 @@ function Contract({ navigation }) {
                     }
                 })
                 .catch(function (error) {
-                    console.log('error',error)
+                    console.log('error', error)
                     setLoader(false)
                 });
         } catch (error) {
@@ -530,7 +530,7 @@ function Contract({ navigation }) {
 
         if (data.obj.selectedDate) {
             BuyerApiContract(data.obj)
-           
+
         }
 
         if (bbg)
@@ -574,7 +574,7 @@ function Contract({ navigation }) {
                     alignItems: 'center',
                 }}>
                 <NoRecordsFound_Icon />
-                <Text style={{fontSize:14,fontFamily:'Poppins-Regular'}}>Sorry, no records available</Text></View>
+                <Text style={{ fontSize: 14, fontFamily: 'Poppins-Regular' }}>Sorry, no records available</Text></View>
         )
     }
 
@@ -715,7 +715,7 @@ function Contract({ navigation }) {
     return (
         <ScrollView style={{ flex: 1, backgroundColor: '#fff', paddingHorizontal: wp(2) }}>
             <Spinner visible={Loader} color="#085cab" />
-          
+
 
             <View style={{ marginTop: hp(2) }}>
                 <Text
@@ -730,10 +730,10 @@ function Contract({ navigation }) {
                     Buyer/Seller
                 </Text>
 
-                <SelectsBox data={Buyer} 
-                selected={BuyerId} 
-                onSelect={(selectedItem) => setBuyerId(selectedItem)} />
-               
+                <SelectsBox data={Buyer}
+                    selected={BuyerId}
+                    onSelect={(selectedItem) => setBuyerId(selectedItem)} />
+
 
             </View>
             <View style={{ marginTop: 10, marginBottom: 5, width: wp(46) }}>
@@ -1142,7 +1142,7 @@ function Post({ navigation }) {
                         }}>
                         Date Range
                     </Text>
-                    <TouchableOpacity  onPress={() => navigation.navigate('Custom', { onSelect: onSelectPost, comingFrom: 'Post' })}>
+                    <TouchableOpacity onPress={() => navigation.navigate('Custom', { onSelect: onSelectPost, comingFrom: 'Post' })}>
                         <View style={{
                             flexDirection: 'row', borderWidth: 0.5, height: hp(6.5), borderWidth: 0.7,
                             borderRadius: 4,
@@ -1296,28 +1296,8 @@ const InPutText = (props) => {
     )
 }
 
-export default Contract 
+export default Contract
 
 const onPressed = () => {
     console.log('reset')
 }
-
-// const styles = StyleSheet.create({
-//     label: {
-//         fontSize: hp(2.5),
-//         color: theme.colors.primary,
-//         fontFamily: "Poppins-Regular"
-//     },
-//     value: {
-//         fontSize: hp(2.5),
-//         color: theme.colors.primary,
-//         fontFamily: "Poppins-Bold",
-//         marginRight: wp(5)
-//     },
-//     VAlue1: {
-//         fontSize: hp(2),
-//         color: theme.colors.text,
-//         fontFamily: "Poppins-Regular"
-//     }
-
-// })

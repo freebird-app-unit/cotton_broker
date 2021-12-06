@@ -40,8 +40,8 @@ class MyContractFilter extends Component {
             isStartDatePicked: false,
             isEndDatePicked: false,
             startDate: '',
-            selectingDate:false,
-            selectEndDate:false,
+            selectingDate: false,
+            selectEndDate: false,
             SendFromDate: moment(new Date()).format('YYYY-MM-DD'),
             SendEndDate: moment(new Date()).format('YYYY-MM-DD')
         };
@@ -49,42 +49,41 @@ class MyContractFilter extends Component {
     }
 
     goBack = () => {
-        const { navigation,route } = this.props;
-       navigation.goBack();
+        const { navigation, route } = this.props;
+        navigation.goBack();
         // console.log('this,.propsd',this.props.route)
-        if (this.state.selectEndDate == false)
-        {
+        if (this.state.selectEndDate == false) {
             const obj = {
                 from: this.state.SendFromDate,
                 to: this.state.SendFromDate,
                 GoingTo: route.params.comingFrom,
-                selectedDate: this.state.selectingDate 
+                selectedDate: this.state.selectingDate
             }
-                    
-            this.setState({ selectingDate: false, selectEndDate: false,})
+
+            this.setState({ selectingDate: false, selectEndDate: false, })
             route.params.onSelect({ obj });
         } else {
-        const obj = {
-            from: this.state.SendFromDate,
-            to: this.state.SendEndDate,
-            selectedDate: this.state.selectingDate ,
-            GoingTo: route.params.comingFrom
+            const obj = {
+                from: this.state.SendFromDate,
+                to: this.state.SendEndDate,
+                selectedDate: this.state.selectingDate,
+                GoingTo: route.params.comingFrom
 
-        }
+            }
             this.setState({ selectingDate: false, selectEndDate: false, })
 
 
-        route.params.onSelect({ obj });
-    }
+            route.params.onSelect({ obj });
+        }
     }
 
 
     onDayPress = (day) => {
-     
-        console.log('day', day);
-        
 
-        if (this.state.isStartDatePicked == false ) {
+        console.log('day', day);
+
+
+        if (this.state.isStartDatePicked == false) {
             let markedDates = {}
             markedDates[day.dateString] = { startingDay: true, color: theme.colors.primary, textColor: '#FFFFFF' };
             this.setState({
@@ -92,7 +91,7 @@ class MyContractFilter extends Component {
                 isStartDatePicked: true,
                 isEndDatePicked: false,
                 startDate: day.dateString,
-                selectingDate:true,
+                selectingDate: true,
                 SendFromDate: moment(new Date(day.dateString)).format('YYYY-MM-DD')
             });
         } else {
@@ -126,7 +125,7 @@ class MyContractFilter extends Component {
                     markedDates: markedDates,
                     isStartDatePicked: false,
                     isEndDatePicked: true,
-                    selectEndDate:true,
+                    selectEndDate: true,
                     startDate: '',
                     selectingDate: true,
 
@@ -140,7 +139,7 @@ class MyContractFilter extends Component {
                     isEndDatePicked: true,
                     selectEndDate: false,
                     startDate: '',
-                    markedDates:{},
+                    markedDates: {},
                     selectingDate: false,
 
                 });
@@ -248,10 +247,10 @@ class MyContractFilter extends Component {
                             flexDirection: 'row', paddingHorizontal: wp(5),
                             marginTop: hp(8), height: hp(5), alignItems: 'center', justifyContent: 'space-between'
                         }}>
-                            <Ionicons name='chevron-back-outline' size={hp(3)} color='#333' style={{ width: wp(30) }} 
-                            onPress={() => this.goBack()} />
-                            <Text style={{width:wp(30), alignSelf: 'center', color: '#333', fontSize: hp(3), fontFamily: 'Poppins - Regular' }}>Custom</Text>
-                            <View style={{ width: wp(22),justifyContent:'space-between', flexDirection:'row', alignSelf:'center' }} >
+                            <Ionicons name='chevron-back-outline' size={hp(3)} color='#333' style={{ width: wp(30) }}
+                                onPress={() => this.goBack()} />
+                            <Text style={{ width: wp(30), alignSelf: 'center', color: '#333', fontSize: hp(3), fontFamily: 'Poppins - Regular' }}>Custom</Text>
+                            <View style={{ width: wp(22), justifyContent: 'space-between', flexDirection: 'row', alignSelf: 'center' }} >
                                 <TouchableOpacity onPress={() => this.onClickCancel()}>
                                     <Refresh_Icon />
 
@@ -504,7 +503,6 @@ const styles = StyleSheet.create({
         marginHorizontal: 0,
         width: '100%'
     },
-
 });
 
 export default MyContractFilter;

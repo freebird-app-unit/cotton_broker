@@ -52,9 +52,8 @@ const api_config = {
   LOGOUT_BROKER:'logout_broker',
   GET_MCX_DATA: "get_mcx_data",
   NEWS: 'news',
-  CONTRACT_PARTY_LIST:'contract_party_list',
-  BROKER_PARTY_WISE_CONTRACT_REPORT:'broker_party_wise_contract_report'
-  
+  CONTRACT_PARTY_LIST: 'contract_party_list',
+  BROKER_PARTY_WISE_CONTRACT_REPORT: 'broker_party_wise_contract_report'
 
 
 

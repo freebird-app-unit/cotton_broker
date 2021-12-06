@@ -6,7 +6,7 @@ import { TouchableOpacity, FlatList } from 'react-native-gesture-handler';
 import { theme } from '../core/theme'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
-import { WebView } from 'react-native-webview';
+// import { WebView } from 'react-native-webview';
 
 import { AnimatedCircularProgress } from 'react-native-circular-progress';
 import { Avatar } from 'react-native-paper';
@@ -39,57 +39,56 @@ socket.connect()
 
 
 
-const MCXScreen = ({ navigation }) => {
+const MCXScreen = ({ navigation,route }) => {
 
-    const [mcxData, setmcxData] = useState([])
+    // console.log('route',route.params.list)
+
+    const [mcxData, setmcxData] = useState(route.params.list)
 
 
-    const SocketData = () => {
-        console.log('socket',mcxData)
+    useEffect(() => {
+
+
+        // console.log('d>>>>',d)
+
+        console.log('connect')
         socket.connect()
+
         socket.on(
-            'McxEvent',
-            content => {
-                console.log('content >>> 1', content.data.Mcx.parameters,mcxData.length);
+                        'McxEvent',
+                        content => {
+                            console.log('content >>> 1', content.data.Mcx.parameters.length);
 
-                global.Notification = content.data.notificationSeller
-                let d =  mcxData.filter(item => content.data.Mcx.parameters.map(it => {
-                    if (it.name.startsWith(item.name)) {
-                        item.name = it.name,
-                            item.value = it.value
-                        return item
-                    } else {
-                        console.log('it', it)
+                            // global.Notification = content.data.notificationSeller
+                            let d = mcxData.filter(item => content.data.Mcx.parameters.map(it => {
+                                if (it.name.startsWith(item.name)) {
+                                    item.name = it.name,
+                                        item.value = it.value
+                                    return item
+                                } else {
+                                    console.log('it', it)
 
-                        return it
-                    }
-                }
-                ))
+                                    return it
+                                }
+                            }
+                            ))
 
-                console.log('d>>>>>>>>>>>>>>>>>',d,mcxData);
-                d.length > 0 ? setmcxData(d) : setmcxData(content.data.Mcx.parameters)
-            },
-        );
-    }
+                            // console.log('d',d.length);
+                            setmcxData(d)
 
+                        },
+                    );
+        
 
-    // useEffect(() => {
+        // socket.on(
+        //     'McxEvent',
+        //     content => {
+        //         console.log('>>>>>', content)
+        //         setmcxData(content.parameters)
+        //     }
 
-
-    //     // console.log('d>>>>',d)
-
-    //     console.log('connect')
-       
-
-    //     // socket.on(
-    //     //     'McxEvent',
-    //     //     content => {
-    //     //         console.log('>>>>>', content)
-    //     //         setmcxData(content.parameters)
-    //     //     }
-
-    //     // )
-    // }, [])
+        // )
+    }, [])
 
     var date = new Date().getDate();
     var month = new Date().getMonth();
@@ -105,9 +104,26 @@ const MCXScreen = ({ navigation }) => {
 
     const [isLogin, setLogin] = useState(true)
 
+    const [itemChecked, setItemChecked] = useState(false);
 
 
     const [loading, setLoader] = useState(false)
+
+    // const [mcxData, setmcxData] = useState([{ name: 'COTTON21DECFUT', value: '--' }, { name: 'COTTON22APRFUT', value: '--' },
+    // {
+    //     name: 'COTTON22FEBFUT', value: '--'
+    // }, {
+    //     name: 'COTTON22JANFUT', value: '--'
+    // },
+    // {
+    //     name: 'USDINR21DECFUT', value: '--'
+    // }, {
+    //     name: 'USDINR22JANFUT', value: '--'
+    // }, {
+    //     name: 'USDINR22FEBFUT', value: '--'
+    // },
+    // { name: 'KAPAS22APRFUT', value: '--' }, { name: 'KAPAS22FEBFUT', value: '--' }])
+
 
     // const [mcxData, setmcxData] = useState([{ name: `COTTON${year}${b[month]}FUT`, value: '--' },
     // { name: `KAPAS${year}${b[month]}FUT`, value: '--' }, {
@@ -116,6 +132,9 @@ const MCXScreen = ({ navigation }) => {
     const ListTransaction = () => {
         try {
             setLoader(true)
+
+
+
             let data = {
                 parameters: {
                     cotton: "20.00", cocudakl: "300.00", kapas: "40.00", usdinr: "10.00"
@@ -143,30 +162,21 @@ const MCXScreen = ({ navigation }) => {
                 if (response.status == 200) {
 
                     console.log('response', response.data)
+                    let obj ={}
 
-                    let mc = []
-                    let obj = {}
-
-                    // for(i=0;i<response.data.data.length;i++)
-                    //     {
-                    //         mc.push({
-                    //             name:response.data.data[i].parameters,
-                    //             value: '--'
-                    //         })
-                    //     }
-                    mc = response.data.data.map(item => {
-                            obj = {
-                                name:item.parameters,
-                                value: '--'
-                            }
-
-                            return obj;
+                    let list = response.data.data.map(item => {
+                        obj = {
+                            name: item.parameters,
+                            value:'--'
+                        }
+                        return obj
                     })
 
-                    setmcxData(mc)
-                    mc.length > 0 && SocketData()
-// 
-                    // console.log('mcxData',mc,mcxData)
+                    setmcxData(list)
+                    // setItemChecked((prevState) => !prevState);
+
+
+                    
 
                     // let bro = response.data.data.filter(item => item.type === 'default')
                     // DefaultBrokerList(bro);
@@ -207,7 +217,9 @@ const MCXScreen = ({ navigation }) => {
 
     useEffect(() => {
         console.log('hi')
-        ListTransaction()
+        // ListTransaction()
+
+
     }, [])
 
     const [refreshing, serRefresh] = useState(false)
@@ -215,8 +227,6 @@ const MCXScreen = ({ navigation }) => {
     const _onRefresh = () => {
         serRefresh(true);
         ListTransaction();
-
-        console.log('mcxData',mcxData)
 
     }
 
@@ -252,13 +262,14 @@ const MCXScreen = ({ navigation }) => {
         // console.log('item', item)
         return (
             <View style={{ flexDirection: 'column', borderBottomColor: 'lightgray', borderBottomWidth: 0.5 }}>
-                <View style={{ flexDirection: 'row', alignSelf: 'center', justifyContent: 'space-between', width: wp(94), marginVertical: hp(1) }}>
-                    <View style={{ flexDirection: 'row' }}>
+                <View style={{ flexDirection: 'row', alignSelf: 'center', justifyContent: 'space-between', width: wp(94),
+                marginVertical: hp(1) }}>
+                    <View style={{ flexDirection: 'row',alignItems:'center' }}>
                         <Text style={{
                             fontSize: hp(2),
                             color: theme.colors.text,
-                            fontFamily: "Poppins-Bold",
-                            fontWeight: 'bold'
+                            fontFamily: "Poppins-SemiBold",
+                            // fontWeight: 'bold'
                         }}>
                             {item.name}
                         </Text>
@@ -267,24 +278,25 @@ const MCXScreen = ({ navigation }) => {
                             color: theme.colors.text,
                             opacity: 0.5,
                             fontFamily: "Poppins-Regular",
-                            marginLeft: wp(2)
+                            marginLeft: wp(2),
 
-                        }}>
-                            MCX
+                        }}>MCX
                         </Text>
                     </View>
                     <Text style={{
                         fontSize: hp(2),
                         color: theme.colors.text,
                         fontFamily: "Poppins-Bold",
-                        fontWeight: 'bold',
+                        paddingTop: 5
+                        // fontWeight: 'bold',
 
                     }}>
                         {item.value}
                     </Text>
                 </View>
-                <View style={{ flexDirection: 'row', alignSelf: 'center', justifyContent: 'space-between', width: wp(94), marginVertical: hp(1) }}>
-                    <View style={{ flexDirection: 'row' }}>
+                {/* <View style={{ flexDirection: 'row', alignSelf: 'center', justifyContent: 'space-between',
+                 width: wp(94), marginVertical: hp(0) }}> */}
+                    {/* <View style={{ flexDirection: 'row' }}>
                         <Text>
                             {datemonth}
                         </Text>
@@ -297,15 +309,15 @@ const MCXScreen = ({ navigation }) => {
                         }}>
                             FUT
                         </Text>
-                    </View>
-                    <Text style={{
+                    </View> */}
+                    {/* <Text style={{
                         fontSize: hp(2),
                         color: theme.colors.text,
                         fontFamily: "Poppins-Bold",
                         fontWeight: 'bold'
                     }}>
                     </Text>
-                </View>
+                </View> */}
             </View>
         )
     }
@@ -322,13 +334,17 @@ const MCXScreen = ({ navigation }) => {
 
             <View style={{ flex: 1, marginTop: hp(2) }}>
 
+
+
+
                 <View style={{
                     flex: 1
                 }}>
-                    <FlatList data={mcxData || []}
+                    <FlatList data={mcxData}
                         renderItem={renderItem}
                         // renderSectionHeader={({ section }) => <Text style={styles.sectionHeader}>{section.title}</Text>}
                         keyExtractor={(item, index) => index}
+                        // extraData={itemChecked}
                         refreshControl={
                             <RefreshControl
                                 refreshing={refreshing}

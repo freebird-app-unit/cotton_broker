@@ -1,0 +1,9 @@
+com/cottonbidbroker/MainApplication.java
+ com.cottonbidbroker.MainApplication
+ com.cottonbidbroker.MainApplication$1
+com/cottonbidbroker/BuildConfig.java
+ com.cottonbidbroker.BuildConfig
+com/cottonbidbroker/MainActivity.java
+ com.cottonbidbroker.MainActivity
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
