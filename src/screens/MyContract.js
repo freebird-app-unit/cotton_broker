@@ -372,7 +372,8 @@ class App extends Component {
                     arrDealDetails = el.deal_details.filter(dl => dl.lab_report_status != "fail_with_renegotiation"),
                     //console.log("Hello Bhavin Thakkar: " + arrDealDetails.length),
 
-                    <View><View style={{ flexDirection: 'row', width: '100%' }}>
+                    <View>
+                        {el.deal_details.length > 0 && ( <View style={{ flexDirection: 'row', width: '100%' }}>
                         <View
                             style={{
                                 flex: 1,
@@ -394,7 +395,7 @@ class App extends Component {
                                 {displayDate}
                             </Text>
                         </View>
-                    </View>
+                    </View> )}
 
                         {arrDealDetails.map((dd, j) => (
                             <View>

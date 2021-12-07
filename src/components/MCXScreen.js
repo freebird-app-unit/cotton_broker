@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { View, Text, SectionList, RefreshControl, Platform } from 'react-native';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from './responsive-ratio';
 import { Button } from './Button';
@@ -17,6 +17,7 @@ import defaultMessages from '../helpers/defaultMessages';
 import Spinner from 'react-native-loading-spinner-overlay';
 
 import { io } from "socket.io-client";
+// import ItemMcx from './ItemMcx';
 if (!window.location) {
     // MCXScreen is running in simulator
     // console.log('sdfsdf', window.navigator)
@@ -32,6 +33,11 @@ const connectionConfig = {
     transports: ['websocket']/// you need to explicitly tell it to use websockets
 };
 
+const viewabilityConfig = {
+    minimumViewTime: 3000,
+    viewAreaCoveragePercentThreshold: 100,
+    waitForInteraction: true,
+};
 
 
 const socket = io.connect('http://165.232.181.91:3000/', connectionConfig); //live
@@ -39,55 +45,64 @@ socket.connect()
 
 
 
-const MCXScreen = ({ navigation,route }) => {
+const MCXScreen = ({ navigation, route }) => {
 
     // console.log('route',route.params.list)
+    // let obj = {}
+    // let mcxdt = route.params.list.map(item => {
+    //     obj = {
+    //         ...item,
+    //         active:false
+    //     }
+    //     return obj
+    // })
 
     const [mcxData, setmcxData] = useState(route.params.list)
+    const [itemChecked, setItemChecked] = useState(false);
 
 
     useEffect(() => {
 
 
-        // console.log('d>>>>',d)
+        let isSubscribed = true;
 
-        console.log('connect')
+        // console.log('connect')
         socket.connect()
-
         socket.on(
-                        'McxEvent',
-                        content => {
-                            console.log('content >>> 1', content.data.Mcx.parameters.length);
+            'McxEvent',
+            content => {
 
-                            // global.Notification = content.data.notificationSeller
-                            let d = mcxData.filter(item => content.data.Mcx.parameters.map(it => {
-                                if (it.name.startsWith(item.name)) {
-                                    item.name = it.name,
-                                        item.value = it.value
-                                    return item
-                                } else {
-                                    console.log('it', it)
+                let obj = {}
+                let d = mcxData.filter(item => content.data.Mcx.parameters.map(it => {
+                    if (it.name.startsWith(item.name)) {
 
-                                    return it
-                                }
-                            }
-                            ))
+                        item.expiryDate = item.expiryDate,
+                            item.name = it.name,
+                            item.active = item.active,
+                            item.close_price = it.close_price,
+                            item.current_price = it.current_price,
+                            item.high_price = it.high_price,
+                            item.low_price = it.low_price,
+                            item.open_price = it.open_price
 
-                            // console.log('d',d.length);
-                            setmcxData(d)
+                        return item
+                    } else {
+                        // console.log('it', it)
 
-                        },
-                    );
-        
+                        return it
+                    }
+                }
+                ))
 
-        // socket.on(
-        //     'McxEvent',
-        //     content => {
-        //         console.log('>>>>>', content)
-        //         setmcxData(content.parameters)
-        //     }
+                // console.log('d',d.length);
+                isSubscribed ? setmcxData(d) : null
 
-        // )
+            },
+        );
+
+        return () => (isSubscribed = false)
+
+
     }, [])
 
     var date = new Date().getDate();
@@ -104,7 +119,7 @@ const MCXScreen = ({ navigation,route }) => {
 
     const [isLogin, setLogin] = useState(true)
 
-    const [itemChecked, setItemChecked] = useState(false);
+    // const [itemChecked, setItemChecked] = useState(false);
 
 
     const [loading, setLoader] = useState(false)
@@ -162,13 +177,25 @@ const MCXScreen = ({ navigation,route }) => {
                 if (response.status == 200) {
 
                     console.log('response', response.data)
-                    let obj ={}
-
+                    let obj = {}
+                    let temp = ''
+                    let dt = ''
                     let list = response.data.data.map(item => {
+                        temp = item.parameters.split(/(\d+)/);
+                        dt = temp[1];
+                        temp = temp[2].split('FUT');
+
+                        // console.log('temp', temp)
                         obj = {
                             name: item.parameters,
-                            value:'--'
-                        }
+                            active: false,
+                            expiryDate: dt + ' ' + temp[0],
+                            close_price: '--',
+                            current_price: '--',
+                            high_price: '--',
+                            low_price: '--',
+                            open_price: '--'
+                        } 
                         return obj
                     })
 
@@ -176,7 +203,7 @@ const MCXScreen = ({ navigation,route }) => {
                     // setItemChecked((prevState) => !prevState);
 
 
-                    
+
 
                     // let bro = response.data.data.filter(item => item.type === 'default')
                     // DefaultBrokerList(bro);
@@ -258,67 +285,165 @@ const MCXScreen = ({ navigation,route }) => {
             // backgroundColor: '#8fb1aa',  
         }
     }
+    const onItemShow = (item) => {
+        console.log('clicked')
+        const updated = mcxData.map((it) => {
+            // it.active = false;
+            if (it.name === item.name) {
+                it.active = !it.active;
+            }
+            return it;
+        });
+        setmcxData(updated)
+        setItemChecked((prevState) => !prevState);
+
+
+    }
+
+    const onLayout = event => {
+        let { height } = event.nativeEvent.layout;
+        // console.log('height',height,hp(9))
+    };
+
+    const calculationPercentage = (current, prev) => {
+        let value = current - prev;
+        // let percentage = ( ((prev-current) / prev) * 100);
+        let percentage = ((current * 100) / prev) - 100
+        return Math.floor(value).toFixed(2) + '(' + percentage.toFixed(2) + '%)'
+    }
+
     const renderItem = ({ item }) => {
         // console.log('item', item)
         return (
-            <View style={{ flexDirection: 'column', borderBottomColor: 'lightgray', borderBottomWidth: 0.5 }}>
-                <View style={{ flexDirection: 'row', alignSelf: 'center', justifyContent: 'space-between', width: wp(94),
-                marginVertical: hp(1) }}>
-                    <View style={{ flexDirection: 'row',alignItems:'center' }}>
-                        <Text style={{
-                            fontSize: hp(2),
-                            color: theme.colors.text,
-                            fontFamily: "Poppins-SemiBold",
-                            // fontWeight: 'bold'
+            <TouchableOpacity onPress={() => onItemShow(item)}>
+                <View style={{ flexDirection: 'column' }} key={item.name.toString()}>
+                    <View style={{ flexDirection: 'column', }}>
+                        <View style={{
+                            flexDirection: 'row', alignSelf: 'center', justifyContent: 'space-between', width: wp(94),
+                            marginVertical: hp(1)
                         }}>
-                            {item.name}
-                        </Text>
-                        <Text style={{
-                            fontSize: hp(2),
-                            color: theme.colors.text,
-                            opacity: 0.5,
-                            fontFamily: "Poppins-Regular",
-                            marginLeft: wp(2),
+                            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                                <Text style={{
+                                    fontSize: hp(2),
+                                    color: theme.colors.text,
+                                    fontFamily: "Poppins-SemiBold",
+                                    // fontWeight: 'bold'
+                                }}>
+                                    {item.name.split(/(\d+)/)[0]}
+                                </Text>
+                                <Text style={{
+                                    fontSize: hp(2),
+                                    color: theme.colors.text,
+                                    opacity: 0.5,
+                                    fontFamily: "Poppins-Regular",
+                                    marginLeft: wp(2),
 
-                        }}>MCX
-                        </Text>
+                                }}>MCX
+                                </Text>
+                            </View>
+                            <Text style={{
+                                fontSize: hp(2),
+                                color: theme.colors.text,
+                                fontFamily: "Poppins-Bold",
+                                paddingTop: 5
+                                // fontWeight: 'bold',
+
+                            }}>{Math.floor(item.current_price).toFixed(2)}
+                            </Text>
+                        </View>
+                        <View style={{
+                            flexDirection: 'row', alignSelf: 'center', justifyContent: 'space-between',
+                            width: wp(94), marginVertical: hp(0)
+                        }}>
+                            <View style={{ flexDirection: 'row' }}>
+                                <Text>
+                                    {item.expiryDate}
+                                </Text>
+                                <Text style={{
+                                    fontSize: hp(2),
+                                    color: theme.colors.text,
+                                    opacity: 0.5,
+                                    fontFamily: "Poppins-Regular",
+                                    marginLeft: wp(2)
+                                }}>
+                                    FUT
+                                </Text>
+                            </View>
+                            <Text style={{
+                                fontSize: hp(1.7),
+                                color: parseInt(item.current_price - item.close_price) > 0 ? 'green' : item.current_price - item.close_price === 0 ? theme.colors.textColor : 'red',
+                                fontFamily: "Poppins-Medium",
+                            }}>{calculationPercentage(item.current_price, item.close_price)}
+                            </Text>
+                        </View>
                     </View>
-                    <Text style={{
-                        fontSize: hp(2),
-                        color: theme.colors.text,
-                        fontFamily: "Poppins-Bold",
-                        paddingTop: 5
-                        // fontWeight: 'bold',
+                    {item.active && (<View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
+                        <View style={{ flexDirection: 'column' }}>
+                            <Text style={{
+                                fontSize: hp(2),
+                                color: theme.colors.text,
+                                opacity: 0.5,
+                                fontFamily: "Poppins-Regular",
 
-                    }}>
-                        {item.value}
-                    </Text>
-                </View>
-                {/* <View style={{ flexDirection: 'row', alignSelf: 'center', justifyContent: 'space-between',
-                 width: wp(94), marginVertical: hp(0) }}> */}
-                    {/* <View style={{ flexDirection: 'row' }}>
-                        <Text>
-                            {datemonth}
-                        </Text>
-                        <Text style={{
-                            fontSize: hp(2),
-                            color: theme.colors.text,
-                            opacity: 0.5,
-                            fontFamily: "Poppins-Regular",
-                            marginLeft: wp(2)
-                        }}>
-                            FUT
-                        </Text>
-                    </View> */}
-                    {/* <Text style={{
-                        fontSize: hp(2),
-                        color: theme.colors.text,
-                        fontFamily: "Poppins-Bold",
-                        fontWeight: 'bold'
-                    }}>
-                    </Text>
-                </View> */}
-            </View>
+                            }}>Open</Text>
+                            <Text style={{
+                                fontSize: hp(2),
+                                color: theme.colors.text,
+
+                                fontFamily: "Poppins-Medium",
+
+                            }}>{Math.floor(item.open_price).toFixed(2)}</Text>
+                        </View>
+                        <View style={{ flexDirection: 'column' }}>
+                            <Text style={{
+                                fontSize: hp(2),
+                                color: theme.colors.text,
+                                opacity: 0.5,
+                                fontFamily: "Poppins-Regular",
+
+                            }}>High</Text>
+                            <Text style={{
+                                fontSize: hp(2),
+                                color: theme.colors.text,
+                                fontFamily: "Poppins-Medium",
+
+                            }}>{Math.floor(item.high_price).toFixed(2)}</Text>
+                        </View>
+                        <View style={{ flexDirection: 'column' }}>
+                            <Text style={{
+                                fontSize: hp(2),
+                                color: theme.colors.text,
+                                opacity: 0.5,
+                                fontFamily: "Poppins-Regular",
+
+                            }}>Low</Text>
+                            <Text style={{
+                                fontSize: hp(2),
+                                color: theme.colors.text,
+
+                                fontFamily: "Poppins-Medium",
+
+                            }}>{Math.floor(item.low_price).toFixed(2)}</Text>
+                        </View>
+                        <View style={{ flexDirection: 'column' }}>
+                            <Text style={{
+                                fontSize: hp(2),
+                                color: theme.colors.text,
+                                opacity: 0.5,
+                                fontFamily: "Poppins-Regular",
+
+                            }}>Prev.close</Text>
+                            <Text style={{
+                                fontSize: hp(2),
+                                color: theme.colors.text,
+
+                                fontFamily: "Poppins-Medium",
+
+                            }}>{Math.floor(item.close_price).toFixed(2)}</Text>
+                        </View>
+                    </View>)}
+                </View></TouchableOpacity>
+
         )
     }
 
@@ -327,6 +452,23 @@ const MCXScreen = ({ navigation,route }) => {
         console.log('state', state);
 
     }
+    const shouldComponentUpdate = () => {
+        return false
+    }
+    const sepratorComponent = () => <View style={{
+        borderBottomColor: 'lightgray',
+        borderBottomWidth: 0.5, marginTop: hp(1)
+    }} />
+
+    const getItemLayout =
+        useCallback((data, index) => ({
+            length: hp(11),
+            offset: hp(11) * index,
+            index,
+        }),
+            []);
+
+    const keyExtractor = useCallback((item) => item.expiryDate.toString() + item.name.toString(), []);
 
     return (
         <View style={{ flex: 1, backgroundColor: 'transparent', marginTop: hp(1), paddingHorizontal: wp(3) }}>
@@ -341,10 +483,20 @@ const MCXScreen = ({ navigation,route }) => {
                     flex: 1
                 }}>
                     <FlatList data={mcxData}
+                        style={{ flex: 1 }}
                         renderItem={renderItem}
+                        // renderItem={({item, index}) => <ItemMcx item={item} onItemShow={onItemShow} calculationPercentage={calculationPercentage} />}
                         // renderSectionHeader={({ section }) => <Text style={styles.sectionHeader}>{section.title}</Text>}
-                        keyExtractor={(item, index) => index}
-                        // extraData={itemChecked}
+                        keyExtractor={keyExtractor}
+                        windowSize={2}
+                        // shouldItemUpdate={shouldComponentUpdate}
+                        initialNumToRender={3}
+                        viewabilityConfig={viewabilityConfig}
+                        maxToRenderPerBatch={1}
+                        ItemSeparatorComponent={sepratorComponent}
+                        extraData={itemChecked}
+                        removeClippedSubviews={false}
+                        getItemLayout={getItemLayout}
                         refreshControl={
                             <RefreshControl
                                 refreshing={refreshing}
